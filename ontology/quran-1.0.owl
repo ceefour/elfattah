@@ -1,339 +1,204 @@
-<?xml version="1.0"?>
-<rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-    xmlns="http://elfattah.org/ontologies/quran-1.0.owl#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://elfattah.org/ontologies/quran-1.0.owl">
-  <owl:Ontology rdf:about="">
-    <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
-    <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/protege"/>
-    <rdfs:comment xml:lang="en">El-Fattah Quran Verses Ontology</rdfs:comment>
-  </owl:Ontology>
-  <owl:Class rdf:ID="Quran">
-    <owl:disjointWith>
-      <owl:Class rdf:ID="Element"/>
-    </owl:disjointWith>
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-          <owl:Restriction>
-            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-            >114</owl:cardinality>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:ID="hasSura"/>
-            </owl:onProperty>
-            <owl:valuesFrom>
-              <owl:Class rdf:ID="Sura"/>
-            </owl:valuesFrom>
-          </owl:Restriction>
-          <owl:Restriction>
-            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-            >30</owl:cardinality>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:ID="hasAjza"/>
-            </owl:onProperty>
-          </owl:Restriction>
-          <owl:Restriction>
-            <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-            >6000</owl:minCardinality>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:ID="hasAyat"/>
-            </owl:onProperty>
-          </owl:Restriction>
-          <owl:Restriction>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:about="#hasAyat"/>
-            </owl:onProperty>
-            <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-            >6236</owl:maxCardinality>
-          </owl:Restriction>
-          <owl:Restriction>
-            <owl:onProperty>
-              <owl:TransitiveProperty rdf:ID="hasElement"/>
-            </owl:onProperty>
-            <owl:allValuesFrom>
-              <owl:Class rdf:about="#Element"/>
-            </owl:allValuesFrom>
-          </owl:Restriction>
-          <owl:Restriction>
-            <owl:allValuesFrom>
-              <owl:Class rdf:about="#Sura"/>
-            </owl:allValuesFrom>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:about="#hasSura"/>
-            </owl:onProperty>
-          </owl:Restriction>
-          <owl:Restriction>
-            <owl:allValuesFrom>
-              <owl:Class rdf:ID="Ajza"/>
-            </owl:allValuesFrom>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:about="#hasAjza"/>
-            </owl:onProperty>
-          </owl:Restriction>
-        </owl:intersectionOf>
-      </owl:Class>
-    </owl:equivalentClass>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The class of Quran itself.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="#Element">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="Tafsir"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasTafsir"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <owl:equivalentClass>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:TransitiveProperty rdf:ID="isElementOf"/>
-        </owl:onProperty>
-        <owl:hasValue>
-          <Quran rdf:ID="theHolyQuran">
-            <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            ></dc:contributor>
-            <rdfs:comment xml:lang="en">There can be one and only one Quran individual.
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix default:  <http://elfattah.org/ontologies/quran-1.0.owl#> .
+@prefix protege:  <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-All Quran individuals must be asserted or inferred to be a synonym of this one.</rdfs:comment>
-            <rdfs:isDefinedBy rdf:resource="http://en.wikipedia.org/wiki/Quran"/>
-            <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/resource/Qur%27an"/>
-          </Quran>
-        </owl:hasValue>
-      </owl:Restriction>
-    </owl:equivalentClass>
-    <owl:disjointWith rdf:resource="#Quran"/>
-  </owl:Class>
-  <owl:Class rdf:ID="AyatContainer">
-    <owl:disjointWith>
-      <owl:Class rdf:ID="Ayat"/>
-    </owl:disjointWith>
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-          <owl:Restriction>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:about="#hasAyat"/>
-            </owl:onProperty>
-            <owl:allValuesFrom>
-              <owl:Class rdf:about="#Ayat"/>
-            </owl:allValuesFrom>
-          </owl:Restriction>
-          <owl:Class rdf:about="#Element"/>
-          <owl:Restriction>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:about="#hasAyat"/>
-            </owl:onProperty>
-            <owl:someValuesFrom>
-              <owl:Class rdf:about="#Ayat"/>
-            </owl:someValuesFrom>
-          </owl:Restriction>
-        </owl:intersectionOf>
-      </owl:Class>
-    </owl:equivalentClass>
-  </owl:Class>
-  <owl:Class rdf:about="#Tafsir">
-    <owl:equivalentClass>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="isTafsirOf"/>
-        </owl:onProperty>
-        <owl:someValuesFrom>
-          <owl:Class>
-            <owl:unionOf rdf:parseType="Collection">
-              <owl:Class rdf:about="#Element"/>
-              <owl:Class rdf:about="#Quran"/>
-            </owl:unionOf>
-          </owl:Class>
-        </owl:someValuesFrom>
-      </owl:Restriction>
-    </owl:equivalentClass>
-  </owl:Class>
-  <owl:Class rdf:about="#Sura">
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Ayat"/>
-    </owl:disjointWith>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Ajza"/>
-    </owl:disjointWith>
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-          <owl:Restriction>
-            <owl:someValuesFrom rdf:resource="#Quran"/>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:ID="isSuraOf"/>
-            </owl:onProperty>
-          </owl:Restriction>
-          <owl:Class rdf:about="#AyatContainer"/>
-          <owl:Restriction>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:about="#isSuraOf"/>
-            </owl:onProperty>
-            <owl:hasValue rdf:resource="#theHolyQuran"/>
-          </owl:Restriction>
-        </owl:intersectionOf>
-      </owl:Class>
-    </owl:equivalentClass>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The Holy Quran contains 114 Suras.</rdfs:comment>
-  </owl:Class>
-  <owl:Class rdf:about="#Ajza">
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Quran is made of 30 Ajza's.
+default:transliteration
+      a       owl:AnnotationProperty , owl:ObjectProperty ;
+      rdfs:comment "Transliteration of Arabic text in Internationalized Phonetic Alphabet (IPA)."^^xsd:string ;
+      rdfs:range rdfs:Literal .
+
+default:hasAyat
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf default:hasElement ;
+      owl:inverseOf default:isAyatOf .
+
+default:theHolyQuran
+      a       default:Quran ;
+      rdfs:comment """There can be one and only one Quran individual.
+
+All Quran individuals must be asserted or inferred to be a synonym of this one."""@en ;
+      rdfs:isDefinedBy <http://en.wikipedia.org/wiki/Quran> , <http://dbpedia.org/resource/Qur%27an> ;
+      dc:contributor ""^^xsd:string .
+
+<http://elfattah.org/ontologies/quran-1.0.owl>
+      a       owl:Ontology ;
+      rdfs:comment "El-Fattah Quran Verses Ontology"@en ;
+      owl:imports <http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl> , <http://protege.stanford.edu/plugins/owl/protege> .
+
+default:ajzaNumber
+      a       owl:AnnotationProperty , owl:DatatypeProperty ;
+      rdfs:comment "Position of this Ajza within the Quran."^^xsd:string ;
+      rdfs:domain default:Ajza ;
+      rdfs:range xsd:int ;
+      rdfs:subPropertyOf dc:identifier .
+
+default:suraNumber
+      a       owl:AnnotationProperty , owl:DatatypeProperty ;
+      rdfs:comment "Position of this Sura in the Quran."^^xsd:string ;
+      rdfs:domain default:Sura ;
+      rdfs:range xsd:int ;
+      rdfs:subPropertyOf dc:identifier .
+
+default:isElementOf
+      a       owl:TransitiveProperty , owl:ObjectProperty ;
+      owl:inverseOf default:hasElement .
+
+default:Sura
+      a       owl:Class ;
+      rdfs:comment "The Holy Quran contains 114 Suras."^^xsd:string ;
+      owl:disjointWith default:Ajza , default:Ayat ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf ([ a       owl:Restriction ;
+                            owl:hasValue default:theHolyQuran ;
+                            owl:onProperty default:isSuraOf
+                          ] default:AyatContainer)
+              ] .
+
+default:Tafsir
+      a       owl:Class ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:onProperty default:isTafsirOf ;
+                owl:someValuesFrom
+                        [ a       owl:Class ;
+                          owl:unionOf (default:Element default:Quran)
+                        ]
+              ] .
+
+default:Ajza
+      a       owl:Class ;
+      rdfs:comment """Quran is made of 30 Ajza's.
 
 There is a crosscutting division into 30 parts, ajza, each containing two units called ahzab, each of which is divided into four parts (rub 'al-ahzab). The Qur’an is also divided into seven stations (manazil)
 
-The thirty ajza can be used to read through the entire Qur’an in a week or a month. Some of these parts are known by names and these names are the first few words by which the juz' starts. A juz' is sometimes further divided into two ahzab, and each hizb subdivided into four rub 'al-ahzab.</rdfs:comment>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:hasValue rdf:resource="#theHolyQuran"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#isSuraOf"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="isAjzaOf"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#Quran"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#AyatContainer"/>
-    <owl:disjointWith rdf:resource="#Sura"/>
-    <owl:disjointWith>
-      <owl:Class rdf:about="#Ayat"/>
-    </owl:disjointWith>
-  </owl:Class>
-  <owl:Class rdf:about="#Ayat">
-    <owl:equivalentClass>
-      <owl:Class>
-        <owl:intersectionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="#Element"/>
-          <owl:Restriction>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:ID="isAyatOf"/>
-            </owl:onProperty>
-            <owl:allValuesFrom rdf:resource="#AyatContainer"/>
-          </owl:Restriction>
-        </owl:intersectionOf>
-      </owl:Class>
-    </owl:equivalentClass>
-    <owl:disjointWith rdf:resource="#Sura"/>
-    <owl:disjointWith rdf:resource="#Ajza"/>
-    <owl:disjointWith rdf:resource="#AyatContainer"/>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A Quran Sura contains one or more ayat (verses).
+The thirty ajza can be used to read through the entire Qur’an in a week or a month. Some of these parts are known by names and these names are the first few words by which the juz' starts. A juz' is sometimes further divided into two ahzab, and each hizb subdivided into four rub 'al-ahzab."""^^xsd:string ;
+      rdfs:subClassOf default:AyatContainer ;
+      owl:disjointWith default:Sura , default:Ayat .
 
-Each sura is formed from several ayat (verses), which originally means a sign or portent sent by God. The number of ayat differ from sura to sura. An individual ayah may be just a few letters or several lines. The ayat are unlike the highly refined poetry of the pre-Islamic Arabs in their content and distinctive rhymes and rhythms, being more akin to the prophetic utterances marked by inspired discontinuities found in the sacred scriptures of Judaism and Christianity. The actual number of ayat has been a controversial issue among Muslim scholars since Islam's inception, some recognizing 6,000, some 6,204, some 6,219, and some 6,236, although the words in all cases are the same. The most popular edition of the Qur’an, which is based on the Kufa school tradition, contains 6,236 ayat.</rdfs:comment>
-  </owl:Class>
-  <owl:ObjectProperty rdf:about="#hasSura">
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#isSuraOf"/>
-    </owl:inverseOf>
-    <rdfs:subPropertyOf>
-      <owl:TransitiveProperty rdf:about="#hasElement"/>
-    </rdfs:subPropertyOf>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasTafsir">
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#isTafsirOf"/>
-    </owl:inverseOf>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasAjza">
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#isAjzaOf"/>
-    </owl:inverseOf>
-    <rdfs:subPropertyOf>
-      <owl:TransitiveProperty rdf:about="#hasElement"/>
-    </rdfs:subPropertyOf>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#isSuraOf">
-    <rdfs:subPropertyOf>
-      <owl:TransitiveProperty rdf:about="#isElementOf"/>
-    </rdfs:subPropertyOf>
-    <owl:inverseOf rdf:resource="#hasSura"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#isTafsirOf">
-    <owl:inverseOf rdf:resource="#hasTafsir"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#isAyatOf">
-    <rdfs:subPropertyOf>
-      <owl:TransitiveProperty rdf:about="#isElementOf"/>
-    </rdfs:subPropertyOf>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#hasAyat"/>
-    </owl:inverseOf>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasAyat">
-    <owl:inverseOf rdf:resource="#isAyatOf"/>
-    <rdfs:subPropertyOf>
-      <owl:TransitiveProperty rdf:about="#hasElement"/>
-    </rdfs:subPropertyOf>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#isAjzaOf">
-    <owl:inverseOf rdf:resource="#hasAjza"/>
-    <rdfs:subPropertyOf>
-      <owl:TransitiveProperty rdf:about="#isElementOf"/>
-    </rdfs:subPropertyOf>
-  </owl:ObjectProperty>
-  <owl:TransitiveProperty rdf:about="#hasElement">
-    <owl:inverseOf>
-      <owl:TransitiveProperty rdf:about="#isElementOf"/>
-    </owl:inverseOf>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </owl:TransitiveProperty>
-  <owl:TransitiveProperty rdf:about="#isElementOf">
-    <owl:inverseOf rdf:resource="#hasElement"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </owl:TransitiveProperty>
-  <owl:AnnotationProperty rdf:ID="transliteration">
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Transliteration of Arabic text in Internationalized Phonetic Alphabet (IPA).</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:ID="ajzaNumber">
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Position of this Ajza within the Quran.</rdfs:comment>
-    <rdfs:domain rdf:resource="#Ajza"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:ID="suraNumber">
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Position of this Sura in the Quran.</rdfs:comment>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    <rdfs:domain rdf:resource="#Sura"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:ID="ayatNumber">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    <rdfs:domain rdf:resource="#Ayat"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Number of this ayat according to the Sura. Starts from 1.</rdfs:comment>
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:ID="pronunciation">
-    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Pronunciation of Arabic text in Latin.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </owl:AnnotationProperty>
-</rdf:RDF>
+default:hasTafsir
+      a       owl:ObjectProperty ;
+      owl:inverseOf default:isTafsirOf .
 
-<!-- Created with Protege (with OWL Plugin 3.4, Build 130)  http://protege.stanford.edu -->
+default:hasAjza
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf default:hasElement ;
+      owl:inverseOf default:isAjzaOf .
+
+default:AyatContainer
+      a       owl:Class ;
+      owl:disjointWith default:Ayat ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf ([ a       owl:Restriction ;
+                            owl:allValuesFrom default:Ayat ;
+                            owl:onProperty default:hasAyat
+                          ] default:Element [ a       owl:Restriction ;
+                            owl:onProperty default:hasAyat ;
+                            owl:someValuesFrom default:Ayat
+                          ])
+              ] .
+
+default:isTafsirOf
+      a       owl:ObjectProperty ;
+      owl:inverseOf default:hasTafsir .
+
+default:isAyatOf
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf default:isElementOf ;
+      owl:inverseOf default:hasAyat .
+
+default:hasElement
+      a       owl:TransitiveProperty , owl:ObjectProperty ;
+      owl:inverseOf default:isElementOf .
+
+default:isAjzaOf
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf default:isElementOf ;
+      owl:inverseOf default:hasAjza .
+
+default:ayatNumber
+      a       owl:AnnotationProperty , owl:DatatypeProperty ;
+      rdfs:comment "Number of this ayat according to the Sura. Starts from 1."^^xsd:string ;
+      rdfs:domain default:Ayat ;
+      rdfs:range xsd:int ;
+      rdfs:subPropertyOf dc:identifier .
+
+default:hasSura
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf default:hasElement ;
+      owl:inverseOf default:isSuraOf .
+
+default:Ayat
+      a       owl:Class ;
+      rdfs:comment """A Quran Sura contains one or more ayat (verses).
+
+Each sura is formed from several ayat (verses), which originally means a sign or portent sent by God. The number of ayat differ from sura to sura. An individual ayah may be just a few letters or several lines. The ayat are unlike the highly refined poetry of the pre-Islamic Arabs in their content and distinctive rhymes and rhythms, being more akin to the prophetic utterances marked by inspired discontinuities found in the sacred scriptures of Judaism and Christianity. The actual number of ayat has been a controversial issue among Muslim scholars since Islam's inception, some recognizing 6,000, some 6,204, some 6,219, and some 6,236, although the words in all cases are the same. The most popular edition of the Qur’an, which is based on the Kufa school tradition, contains 6,236 ayat."""^^xsd:string ;
+      owl:disjointWith default:AyatContainer , default:Sura , default:Ajza ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf (default:Element [ a       owl:Restriction ;
+                            owl:allValuesFrom default:AyatContainer ;
+                            owl:onProperty default:isAyatOf
+                          ])
+              ] .
+
+default:pronunciation
+      a       owl:AnnotationProperty , owl:ObjectProperty ;
+      rdfs:comment "Pronunciation of Arabic text in Latin."^^xsd:string ;
+      rdfs:range rdfs:Literal .
+
+default:Quran
+      a       owl:Class ;
+      rdfs:comment "The class of Quran itself."^^xsd:string ;
+      owl:disjointWith default:Element ;
+      owl:equivalentClass
+              [ a       owl:Class ;
+                owl:intersectionOf ([ a       owl:Restriction ;
+                            owl:cardinality "114"^^xsd:int ;
+                            owl:onProperty default:hasSura ;
+                            owl:valuesFrom default:Sura
+                          ] [ a       owl:Restriction ;
+                            owl:cardinality "30"^^xsd:int ;
+                            owl:onProperty default:hasAjza
+                          ] [ a       owl:Restriction ;
+                            owl:minCardinality "6000"^^xsd:int ;
+                            owl:onProperty default:hasAyat
+                          ] [ a       owl:Restriction ;
+                            owl:maxCardinality "6236"^^xsd:int ;
+                            owl:onProperty default:hasAyat
+                          ] [ a       owl:Restriction ;
+                            owl:allValuesFrom default:Element ;
+                            owl:onProperty default:hasElement
+                          ] [ a       owl:Restriction ;
+                            owl:allValuesFrom default:Sura ;
+                            owl:onProperty default:hasSura
+                          ] [ a       owl:Restriction ;
+                            owl:allValuesFrom default:Ajza ;
+                            owl:onProperty default:hasAjza
+                          ])
+              ] .
+
+default:Element
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:allValuesFrom default:Tafsir ;
+                owl:onProperty default:hasTafsir
+              ] ;
+      owl:disjointWith default:Quran ;
+      owl:equivalentClass
+              [ a       owl:Restriction ;
+                owl:hasValue default:theHolyQuran ;
+                owl:onProperty default:isElementOf
+              ] .
+
+default:isSuraOf
+      a       owl:ObjectProperty ;
+      rdfs:subPropertyOf default:isElementOf ;
+      owl:inverseOf default:hasSura .

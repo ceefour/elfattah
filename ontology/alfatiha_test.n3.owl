@@ -13,13 +13,21 @@
 default:AlFatehah1
       a       quran:Ayat ;
       rdfs:label "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang."@id , "In the name of Allah, the Merciful, the Compassionate."@en , "بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ"@ar ;
+      quran:ayatNumber "1"^^xsd:int ;
       quran:hasTafsir default:Tafsir_1 ;
-      quran:isAyatOf default:AlFatiha .
+      quran:isAyatOf default:Ajza_1 , default:AlFatiha .
+
+default:Ajza_1
+      a       quran:Ajza ;
+      quran:ajzaNumber "1"^^xsd:int ;
+      quran:hasAyat default:AlFatehah1 ;
+      quran:isAjzaOf quran:theHolyQuran .
 
 default:AlFatiha
       a       quran:Sura ;
       rdfs:label "‏الفاتحة‎"@ar , "Pembukaan"@id , "The Opening"@en ;
       quran:hasAyat default:AlFatehah1 ;
+      quran:suraNumber "1"^^xsd:int ;
       quran:transliteration
               "Al-Fatehah"^^xsd:string .
 
@@ -27,3 +35,6 @@ default:Tafsir_1
       a       quran:Tafsir ;
       rdfs:label "One of the many practices taught by Islam is that its followers should begin their activities in the name of God. This principle, if consciously and earnestly followed, will necessarily yield three beneficial results. First, one will be able to restrain oneself from many misdeed, since the habit of pronouncing the name of God is bound to make one wonder when about to commit some offence how such an act can be reconciled with the saying of God's holy name. Second, if a man pronounces the name of God before starting good and legitimate tasks, this act will ensue that both his starting point and his mental orientation are sound. Third - and this is the most important benefit - when a man begins something by pronouncing God's name, he will enjoy God's support and succour; God will bless his efforts and protect him from the machinations and temptation of Satan. For whenever man turns to God, God turns to him as well."@en ;
       quran:isTafsirOf default:AlFatehah1 .
+
+quran:theHolyQuran
+      quran:hasAjza default:Ajza_1 .
