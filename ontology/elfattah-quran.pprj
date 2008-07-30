@@ -1,4 +1,4 @@
-; Wed Jul 30 06:34:29 WIT 2008
+; Wed Jul 30 21:12:54 WIT 2008
 ; 
 ;+ (version "3.4")
 ;+ (build "Build 130")
@@ -6,11 +6,12 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[elfattah-quran_ProjectKB_Instance_36]
-		[elfattah-quran_ProjectKB_Instance_37]
-		[elfattah-quran_ProjectKB_Instance_38]
-		[elfattah-quran_ProjectKB_Instance_39]
-		[elfattah-quran_ProjectKB_Instance_40]))
+		[elfattah-quran_ProjectKB_Instance_1814]
+		[elfattah-quran_ProjectKB_Instance_1815]
+		[elfattah-quran_ProjectKB_Instance_1816]
+		[elfattah-quran_ProjectKB_Instance_1817]
+		[elfattah-quran_ProjectKB_Instance_1818]
+		[elfattah-quran_ProjectKB_Instance_1819]))
 
 ([CLSES_TAB] of  Widget
 
@@ -19,51 +20,188 @@
 	(property_list [Instance_47])
 	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
 
-([elfattah-quran_ProjectKB_Instance_36] of  String
+([elfattah-quran_ProjectKB_Instance_1659] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:todoProperty")
+	(property_list [elfattah-quran_ProjectKB_Instance_1660]))
+
+([elfattah-quran_ProjectKB_Instance_1660] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_1661] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:todoPrefix")
+	(property_list [elfattah-quran_ProjectKB_Instance_1662]))
+
+([elfattah-quran_ProjectKB_Instance_1662] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_1663] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:excludedTest")
+	(property_list [elfattah-quran_ProjectKB_Instance_1664]))
+
+([elfattah-quran_ProjectKB_Instance_1664] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_1665] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:defaultLanguage")
+	(property_list [elfattah-quran_ProjectKB_Instance_1666]))
+
+([elfattah-quran_ProjectKB_Instance_1666] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_1667] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:usedLanguage")
+	(property_list [elfattah-quran_ProjectKB_Instance_1668]))
+
+([elfattah-quran_ProjectKB_Instance_1668] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_1669] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:probeClass")
+	(property_list [elfattah-quran_ProjectKB_Instance_1670]))
+
+([elfattah-quran_ProjectKB_Instance_1670] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_1671] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:abstract")
+	(property_list [elfattah-quran_ProjectKB_Instance_1672]))
+
+([elfattah-quran_ProjectKB_Instance_1672] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_1673] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:subclassesDisjoint")
+	(property_list [elfattah-quran_ProjectKB_Instance_1674]))
+
+([elfattah-quran_ProjectKB_Instance_1674] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_1675] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:readOnly")
+	(property_list [elfattah-quran_ProjectKB_Instance_1676]))
+
+([elfattah-quran_ProjectKB_Instance_1676] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_1677] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:allowedParent")
+	(property_list [elfattah-quran_ProjectKB_Instance_1678]))
+
+([elfattah-quran_ProjectKB_Instance_1678] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_171] of  Boolean
+
+	(boolean_value TRUE)
+	(name "OWL-EXTERNAL-RESOURCES-ENABLED"))
+
+([elfattah-quran_ProjectKB_Instance_172] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "owl:disjointWith")
+	(property_list [elfattah-quran_ProjectKB_Instance_173])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiLiteralWidget")
+	(width 200)
+	(x 0)
+	(y 500))
+
+([elfattah-quran_ProjectKB_Instance_1721] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:abstract")
+	(property_list [elfattah-quran_ProjectKB_Instance_1722]))
+
+([elfattah-quran_ProjectKB_Instance_1722] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_173] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_1814] of  String
 
 	(name "owl:Thing")
 	(string_value "%3ANAME"))
 
-([elfattah-quran_ProjectKB_Instance_37] of  String
+([elfattah-quran_ProjectKB_Instance_1815] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([elfattah-quran_ProjectKB_Instance_38] of  String
+([elfattah-quran_ProjectKB_Instance_1816] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([elfattah-quran_ProjectKB_Instance_39] of  String
+([elfattah-quran_ProjectKB_Instance_1817] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([elfattah-quran_ProjectKB_Instance_40] of  String
+([elfattah-quran_ProjectKB_Instance_1818] of  String
+
+	(name "Quran")
+	(string_value "transliteration"))
+
+([elfattah-quran_ProjectKB_Instance_1819] of  String
 
 	(name "owl:Class")
 	(string_value "%3ANAME"))
 
-([elfattah-quran_ProjectKB_Instance_41] of  Map_Entry
+([elfattah-quran_ProjectKB_Instance_1820] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([elfattah-quran_ProjectKB_Instance_42] of  Map_Entry
+([elfattah-quran_ProjectKB_Instance_1821] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([elfattah-quran_ProjectKB_Instance_43] of  Map_Entry
+([elfattah-quran_ProjectKB_Instance_1822] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
+
+([elfattah-quran_ProjectKB_Instance_225] of  Widget
+
+	(height 120)
+	(is_hidden FALSE)
+	(name "owl:disjointWith")
+	(property_list [elfattah-quran_ProjectKB_Instance_226])
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiLiteralWidget")
+	(width 200)
+	(x 0)
+	(y 380))
+
+([elfattah-quran_ProjectKB_Instance_226] of  Property_List
+)
 
 ([FORMS_TAB] of  Widget
 
@@ -680,9 +818,9 @@
 ([KB_263471_Instance_0] of  Map
 
 	(entries
-		[elfattah-quran_ProjectKB_Instance_41]
-		[elfattah-quran_ProjectKB_Instance_42]
-		[elfattah-quran_ProjectKB_Instance_43]))
+		[elfattah-quran_ProjectKB_Instance_1820]
+		[elfattah-quran_ProjectKB_Instance_1821]
+		[elfattah-quran_ProjectKB_Instance_1822]))
 
 ([KB_263471_Instance_10] of  Widget
 
@@ -975,6 +1113,9 @@
 	(property_list [XY_Instance_890])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
+([KB_590986_Instance_3] of  Map
+)
+
 ([KB_632156_Instance_0] of  String
 
 	(name "OWL-PREDEFINED-PROFILE-URI")
@@ -1170,9 +1311,6 @@
 	(name "owl:ObjectProperty")
 	(property_list [XY_Instance_462])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([KB_695079_Instance_3] of  Map
-)
 
 ([KB_713803_Instance_10] of  Widget
 
@@ -5559,12 +5697,12 @@
 	(customized_instance_widgets
 		[PAL_FORM_WIDGET]
 		[KB_713803_Instance_477]
-		[KB_713803_Instance_780]
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[KB_713803_Instance_693]
+		[KB_713803_Instance_780]
 		[KB_301165_Instance_856]
-		[KB_713803_Instance_648]
+		[KB_713803_Instance_693]
 		[KB_691299_Instance_537]
+		[KB_713803_Instance_648]
 		[KB_691299_Instance_398]
 		[KB_303942_Instance_68]
 		[KB_938545_Instance_166]
@@ -5589,22 +5727,12 @@
 	(default_instance_widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget")
 	(default_slot_metaclass "owl:ObjectProperty")
 	(hidden_classes
-		"owl:someValuesFrom"
-		"owl:disjointWith"
 		":FROM"
-		"owl:sameAs"
 		":TO"
-		"owl:differentFrom"
 		"protege:inferredSuperclassOf"
 		"protege:inferredSubclassOf"
 		"owl:AnnotationProperty"
 		"protege:classificationStatus"
-		"owl:allValuesFrom"
-		"owl:onProperty"
-		"owl:maxCardinality"
-		"owl:hasValue"
-		"owl:cardinality"
-		"owl:minCardinality"
 		"xsd:Name"
 		"xsd:hexBinary"
 		"xsd:negativeInteger"
@@ -5622,7 +5750,6 @@
 		"xsd:gYearMonth"
 		"xsd:unsignedLong"
 		"xsd:byte"
-		"xsd:anyURI"
 		"xsd:duration"
 		"xsd:token"
 		"xsd:NCName"
@@ -5632,42 +5759,23 @@
 		"xsd:gMonthDay"
 		"xsd:unsignedByte"
 		"xsd:nonNegativeInteger"
-		"xsd:QName"
 		"xsd:short"
 		"xsd:integer"
 		"xsd:normalizedString"
-		"rdfs:Datatype"
 		":DIRECTED-BINARY-RELATION"
-		"owl:ObjectProperty"
-		"owl:DatatypeProperty"
 		"xsd:unsignedShort"
 		"xsd:double"
 		"xsd:unsignedInt"
 		"xsd:base64Binary"
 		"xsd:NMTOKEN"
 		":SYSTEM-CLASS"
-		"owl:oneOf"
-		"owl:DataRange"
-		"rdf:Property"
 		"owl:DeprecatedProperty"
-		"owl:Class"
 		"owl:DeprecatedClass"
-		"rdf:Statement"
 		"rdf:type"
 		"rdf:subject"
-		"rdfs:Class"
 		"rdf:predicate"
-		"rdf:object"
 		":OWL-ANONYMOUS-ROOT"
-		"rdfs:Container"
-		"rdf:Alt"
-		"rdf:Bag"
-		"rdf:Seq"
-		"owl:AllDifferent"
-		"owl:distinctMembers"
-		"rdfs:Literal"
-		"owl:Nothing"
-		"rdf:List"
+		"rdf:object"
 		"rdf:first"
 		"rdf:rest"
 		"owl:SymmetricProperty"
@@ -5743,7 +5851,8 @@
 		[OWL_ProjectKB_Instance_3]
 		[KB_444675_Instance_0]
 		[KB_632156_Instance_0]
-		[KB_263471_Instance_52]))
+		[KB_263471_Instance_52]
+		[elfattah-quran_ProjectKB_Instance_171]))
 
 ([STANDARD_CLASS_FORM_WIDGET] of  Widget
 
@@ -6093,7 +6202,12 @@
 		[KB_635552_Instance_20]
 		[KB_635552_Instance_22]
 		[KB_635552_Instance_24]
-		[KB_938545_Instance_8]))
+		[KB_938545_Instance_8]
+		[elfattah-quran_ProjectKB_Instance_1659]
+		[elfattah-quran_ProjectKB_Instance_1661]
+		[elfattah-quran_ProjectKB_Instance_1663]
+		[elfattah-quran_ProjectKB_Instance_1665]
+		[elfattah-quran_ProjectKB_Instance_1667]))
 
 ([XY_Instance_2] of  Widget
 
@@ -6194,7 +6308,9 @@
 		[KB_140180_Instance_291]
 		[KB_941921_Instance_10]
 		[KB_941921_Instance_14]
-		[KB_024013_Instance_4]))
+		[KB_024013_Instance_4]
+		[elfattah-quran_ProjectKB_Instance_225]
+		[elfattah-quran_ProjectKB_Instance_1721]))
 
 ([XY_Instance_410] of  Widget
 
@@ -6341,7 +6457,9 @@
 		[KB_938545_Instance_160]
 		[KB_938545_Instance_162]
 		[KB_221055_Instance_18]
-		[KB_221055_Instance_22]))
+		[KB_221055_Instance_22]
+		[elfattah-quran_ProjectKB_Instance_1675]
+		[elfattah-quran_ProjectKB_Instance_1677]))
 
 ([XY_Instance_463] of  Widget
 
@@ -6573,7 +6691,11 @@
 		[KB_635552_Instance_6]
 		[KB_635552_Instance_8]
 		[KB_941921_Instance_2]
-		[KB_941921_Instance_6]))
+		[KB_941921_Instance_6]
+		[elfattah-quran_ProjectKB_Instance_172]
+		[elfattah-quran_ProjectKB_Instance_1669]
+		[elfattah-quran_ProjectKB_Instance_1671]
+		[elfattah-quran_ProjectKB_Instance_1673]))
 
 ([XY_Instance_541] of  Widget
 

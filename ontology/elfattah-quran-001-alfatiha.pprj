@@ -1,4 +1,4 @@
-; Wed Jul 30 15:12:00 WIT 2008
+; Wed Jul 30 21:15:27 WIT 2008
 ; 
 ;+ (version "3.4")
 ;+ (build "Build 130")
@@ -6,11 +6,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_117]
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_118]
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_119]
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_120]
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_121]))
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10114]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10115]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10116]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10117]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10118]))
 
 ([CLSES_TAB] of  Widget
 
@@ -19,30 +19,363 @@
 	(property_list [Instance_47])
 	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_117] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_1] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_2])
+	(widget_class_name "se.liu.ida.JessTab.JessTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10114] of  String
 
 	(name "owl:Thing")
 	(string_value "%3ANAME"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_118] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10115] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_119] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10116] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_120] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10117] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_121] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10118] of  String
 
 	(name "owl:Class")
 	(string_value "%3ANAME"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_11] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_12])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_12] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_13] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_14])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_14] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_15] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_16])
+	(widget_class_name "edu.stanford.smi.RemoteKBTab.WordNetTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_16] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_17] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_18])
+	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_18] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_19] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_20])
+	(widget_class_name "edu.stanford.smi.RemoteKBTab.UMLSTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_2] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_20] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_21] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_22])
+	(widget_class_name "org.algernon.kb.okbc.protege.plugins.AlgernonTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_22] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_23] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_24])
+	(widget_class_name "TGViztab.TGVizTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_24] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_25] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_26])
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_26] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_27] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_28])
+	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_28] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_29] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_30])
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_3] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_4])
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_30] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_31] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_32])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_32] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_33] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_34])
+	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_34] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_35] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_36])
+	(widget_class_name "script.ProtegeScriptTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_36] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_37] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_38])
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_38] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_39] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_40])
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_4] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_40] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_41] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_42])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_42] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_43] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_44])
+	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_44] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_45] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_46])
+	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_46] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_47] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_48])
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_48] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_49] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_50])
+	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_5] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_6])
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_50] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_51] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:todoPrefix")
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_52]))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_52] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_53] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:todoProperty")
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_54]))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_54] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_55] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:usedLanguage")
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_56]))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_56] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_57] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:defaultLanguage")
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_58]))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_58] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_59] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:excludedTest")
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_60]))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_6] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_60] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_61] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:subclassesDisjoint")
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_62]))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_62] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_63] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:probeClass")
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_64]))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_64] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_65] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:abstract")
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_66]))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_66] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_67] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:allowedParent")
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_68]))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_68] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_69] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:readOnly")
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_70]))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_7] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_8])
+	(widget_class_name "ezpal.EZPalTab"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_70] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_71] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:allowedParent")
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_72]))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_72] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_73] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:readOnly")
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_74]))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_74] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_8] of  Property_List
+)
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_9] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_10])
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
 
 ([FORMS_TAB] of  Widget
 
@@ -77,9 +410,6 @@
 
 	(name "owl_namespace")
 	(string_value "http://owl.protege.stanford.edu"))
-
-([Instance_2531] of  Property_List
-)
 
 ([Instance_2534] of  Widget
 
@@ -213,12 +543,6 @@
 		[Instance_96]
 		[Instance_97]))
 
-([Instance_89] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [Instance_2531])
-	(widget_class_name "edu.stanford.smi.protegex.owl.jena.rdql.RDQLTab"))
-
 ([Instance_91] of  Integer
 
 	(integer_value 356)
@@ -278,24 +602,6 @@
 	(property_list [Instance_88])
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
 
-([KB_024013_Instance_0] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_024013_Instance_1])
-	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
-
-([KB_024013_Instance_1] of  Property_List
-)
-
-([KB_024013_Instance_2] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_024013_Instance_3])
-	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
-
-([KB_024013_Instance_3] of  Property_List
-)
-
 ([KB_024013_Instance_4] of  Widget
 
 	(height 0)
@@ -307,33 +613,6 @@
 	(y 0))
 
 ([KB_024013_Instance_5] of  Property_List
-)
-
-([KB_078831_Instance_0] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_078831_Instance_1])
-	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
-
-([KB_078831_Instance_1] of  Property_List
-)
-
-([KB_078831_Instance_2] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_078831_Instance_3])
-	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
-
-([KB_078831_Instance_3] of  Property_List
-)
-
-([KB_078831_Instance_4] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_078831_Instance_5])
-	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
-
-([KB_078831_Instance_5] of  Property_List
 )
 
 ([KB_100699_Instance_0] of  Widget
@@ -670,71 +949,6 @@
 ([KB_221055_Instance_39] of  Property_List
 )
 
-([KB_221055_Instance_42] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "owl:inverseOf")
-	(property_list [KB_221055_Instance_43])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_221055_Instance_43] of  Property_List
-)
-
-([KB_221055_Instance_46] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "rdfs:subPropertyOf")
-	(property_list [KB_221055_Instance_47])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_221055_Instance_47] of  Property_List
-)
-
-([KB_221055_Instance_50] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "owl:inverseOf")
-	(property_list [KB_221055_Instance_51])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_221055_Instance_51] of  Property_List
-)
-
-([KB_221055_Instance_54] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "rdfs:subPropertyOf")
-	(property_list [KB_221055_Instance_55])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_221055_Instance_55] of  Property_List
-)
-
-([KB_221055_Instance_58] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "owl:inverseOf")
-	(property_list [KB_221055_Instance_59])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_221055_Instance_59] of  Property_List
-)
-
 ([KB_221055_Instance_6] of  Widget
 
 	(height 0)
@@ -744,19 +958,6 @@
 	(width 0)
 	(x 0)
 	(y 0))
-
-([KB_221055_Instance_62] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "rdfs:subPropertyOf")
-	(property_list [KB_221055_Instance_63])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_221055_Instance_63] of  Property_List
-)
 
 ([KB_221055_Instance_66] of  Widget
 
@@ -896,51 +1097,6 @@
 	(name "SwitchableClassDefinitionType")
 	(string_value "edu.stanford.smi.protegex.owl.ui.cls.LogicClassDefinitionWidgetType"))
 
-([KB_444675_Instance_1] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_444675_Instance_2])
-	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
-
-([KB_444675_Instance_2] of  Property_List
-)
-
-([KB_444675_Instance_3] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_444675_Instance_4])
-	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
-
-([KB_444675_Instance_4] of  Property_List
-)
-
-([KB_446864_Instance_0] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_446864_Instance_1])
-	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
-
-([KB_446864_Instance_1] of  Property_List
-)
-
-([KB_446864_Instance_2] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_446864_Instance_3])
-	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
-
-([KB_446864_Instance_3] of  Property_List
-)
-
-([KB_446864_Instance_4] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_446864_Instance_5])
-	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
-
-([KB_446864_Instance_5] of  Property_List
-)
-
 ([KB_465546_Instance_567] of  Widget
 
 	(is_hidden FALSE)
@@ -948,55 +1104,10 @@
 	(property_list [XY_Instance_890])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
-([KB_484936_Instance_0] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_484936_Instance_1])
-	(widget_class_name "ca.concordia.cs.rql.tab.RqlTab"))
-
-([KB_484936_Instance_1] of  Property_List
-)
-
-([KB_484936_Instance_2] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_484936_Instance_3])
-	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
-
-([KB_484936_Instance_3] of  Property_List
-)
-
-([KB_564539_Instance_0] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_564539_Instance_1])
-	(widget_class_name "uk.ac.man.cs.mig.coode.diglogtab.DIGLogTab"))
-
-([KB_564539_Instance_1] of  Property_List
-)
-
-([KB_575585_Instance_0] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_575585_Instance_1])
-	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
-
-([KB_575585_Instance_1] of  Property_List
-)
-
 ([KB_632156_Instance_0] of  String
 
 	(name "OWL-PREDEFINED-PROFILE-URI")
 	(string_value "http://protege.stanford.edu/plugins/owl/OWLProfiles.owl#RDF"))
-
-([KB_632156_Instance_1] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_632156_Instance_2])
-	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
-
-([KB_632156_Instance_2] of  Property_List
-)
 
 ([KB_632156_Instance_3] of  Boolean
 
@@ -1175,259 +1286,13 @@
 ([KB_635552_Instance_9] of  Property_List
 )
 
-([KB_646337_Instance_0] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_646337_Instance_1])
-	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
-
-([KB_646337_Instance_1] of  Property_List
-)
-
-([KB_646337_Instance_2] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_646337_Instance_3])
-	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
-
-([KB_646337_Instance_3] of  Property_List
-)
-
 ([KB_688283_Instance_0] of  Map
-)
-
-([KB_688283_Instance_1] of  Map
-)
-
-([KB_688283_Instance_10] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_11])
-	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
-
-([KB_688283_Instance_11] of  Property_List
 )
 
 ([KB_688283_Instance_116] of  String
 
 	(name "owl_file_name")
 	(string_value "elfattah-quran-001-alfatiha.owl"))
-
-([KB_688283_Instance_12] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_13])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
-
-([KB_688283_Instance_13] of  Property_List
-)
-
-([KB_688283_Instance_14] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_15])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
-
-([KB_688283_Instance_15] of  Property_List
-)
-
-([KB_688283_Instance_16] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_17])
-	(widget_class_name "edu.stanford.smi.RemoteKBTab.WordNetTab"))
-
-([KB_688283_Instance_17] of  Property_List
-)
-
-([KB_688283_Instance_18] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_19])
-	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
-
-([KB_688283_Instance_19] of  Property_List
-)
-
-([KB_688283_Instance_2] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_3])
-	(widget_class_name "se.liu.ida.JessTab.JessTab"))
-
-([KB_688283_Instance_20] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_21])
-	(widget_class_name "edu.stanford.smi.RemoteKBTab.UMLSTab"))
-
-([KB_688283_Instance_21] of  Property_List
-)
-
-([KB_688283_Instance_22] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_23])
-	(widget_class_name "org.algernon.kb.okbc.protege.plugins.AlgernonTab"))
-
-([KB_688283_Instance_23] of  Property_List
-)
-
-([KB_688283_Instance_24] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_25])
-	(widget_class_name "TGViztab.TGVizTab"))
-
-([KB_688283_Instance_25] of  Property_List
-)
-
-([KB_688283_Instance_26] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_27])
-	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
-
-([KB_688283_Instance_27] of  Property_List
-)
-
-([KB_688283_Instance_28] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_29])
-	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
-
-([KB_688283_Instance_29] of  Property_List
-)
-
-([KB_688283_Instance_3] of  Property_List
-)
-
-([KB_688283_Instance_30] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_31])
-	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
-
-([KB_688283_Instance_31] of  Property_List
-)
-
-([KB_688283_Instance_32] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_33])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
-
-([KB_688283_Instance_33] of  Property_List
-)
-
-([KB_688283_Instance_34] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_35])
-	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
-
-([KB_688283_Instance_35] of  Property_List
-)
-
-([KB_688283_Instance_36] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_37])
-	(widget_class_name "script.ProtegeScriptTab"))
-
-([KB_688283_Instance_37] of  Property_List
-)
-
-([KB_688283_Instance_38] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_39])
-	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
-
-([KB_688283_Instance_39] of  Property_List
-)
-
-([KB_688283_Instance_4] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_5])
-	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
-
-([KB_688283_Instance_40] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_41])
-	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
-
-([KB_688283_Instance_41] of  Property_List
-)
-
-([KB_688283_Instance_42] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_43])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
-
-([KB_688283_Instance_43] of  Property_List
-)
-
-([KB_688283_Instance_44] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_45])
-	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
-
-([KB_688283_Instance_45] of  Property_List
-)
-
-([KB_688283_Instance_46] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_47])
-	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
-
-([KB_688283_Instance_47] of  Property_List
-)
-
-([KB_688283_Instance_48] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_49])
-	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
-
-([KB_688283_Instance_49] of  Property_List
-)
-
-([KB_688283_Instance_5] of  Property_List
-)
-
-([KB_688283_Instance_50] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_51])
-	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
-
-([KB_688283_Instance_51] of  Property_List
-)
-
-([KB_688283_Instance_6] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_7])
-	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
-
-([KB_688283_Instance_7] of  Property_List
-)
-
-([KB_688283_Instance_8] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_688283_Instance_9])
-	(widget_class_name "ezpal.EZPalTab"))
-
-([KB_688283_Instance_9] of  Property_List
-)
 
 ([KB_691299_Instance_398] of  Widget
 
@@ -1442,15 +1307,6 @@
 	(name "owl:ObjectProperty")
 	(property_list [XY_Instance_462])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([KB_713803_Instance_0] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_713803_Instance_1])
-	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
-
-([KB_713803_Instance_1] of  Property_List
-)
 
 ([KB_713803_Instance_10] of  Widget
 
@@ -1538,12 +1394,6 @@
 		[KB_713803_Instance_20]
 		[KB_713803_Instance_21]))
 
-([KB_713803_Instance_2] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_713803_Instance_3])
-	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
-
 ([KB_713803_Instance_20] of  Boolean
 
 	(boolean_value FALSE)
@@ -1599,9 +1449,6 @@
 	(is_hidden FALSE)
 	(name "rdfs:isDefinedBy")
 	(property_list [KB_713803_Instance_30]))
-
-([KB_713803_Instance_3] of  Property_List
-)
 
 ([KB_713803_Instance_30] of  Property_List
 )
@@ -3514,15 +3361,6 @@
 	(property_list [XY_Instance_195])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
-([KB_865583_Instance_0] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_865583_Instance_1])
-	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
-
-([KB_865583_Instance_1] of  Property_List
-)
-
 ([KB_865583_Instance_10] of  Widget
 
 	(is_hidden TRUE)
@@ -3539,24 +3377,6 @@
 	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
 
 ([KB_865583_Instance_13] of  Property_List
-)
-
-([KB_865583_Instance_14] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_865583_Instance_15])
-	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
-
-([KB_865583_Instance_15] of  Property_List
-)
-
-([KB_865583_Instance_2] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_865583_Instance_3])
-	(widget_class_name "uk.ac.man.cs.mig.coode.reasonerquerytab.ui.ReasonerQueryTab"))
-
-([KB_865583_Instance_3] of  Property_List
 )
 
 ([KB_865583_Instance_4] of  Widget
@@ -3654,10 +3474,6 @@
 	(width 200)
 	(x 400)
 	(y 190))
-
-([KB_886778_Instance_151] of  Widget
-
-	(name ":DIRECT-SUPERSLOTS"))
 
 ([KB_886778_Instance_152] of  Widget
 
@@ -3863,15 +3679,6 @@
 	(boolean_value FALSE)
 	(name "ButtonDisplayed-Delete Instance"))
 
-([KB_933314_Instance_0] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_933314_Instance_1])
-	(widget_class_name "edu.stanford.smi.protegex.queries_tab.QueriesTab"))
-
-([KB_933314_Instance_1] of  Property_List
-)
-
 ([KB_933314_Instance_11] of  Boolean
 
 	(boolean_value FALSE)
@@ -3896,15 +3703,6 @@
 
 	(boolean_value TRUE)
 	(name "DisabledByUser"))
-
-([KB_933314_Instance_2] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [KB_933314_Instance_3])
-	(widget_class_name "edu.stanford.smi.protegex.owl.swrl.ui.tab.SWRLTab"))
-
-([KB_933314_Instance_3] of  Property_List
-)
 
 ([KB_933314_Instance_58] of  Property_List
 )
@@ -4364,7 +4162,9 @@
 		[KB_938545_Instance_325]
 		[KB_938545_Instance_327]
 		[KB_221055_Instance_26]
-		[KB_221055_Instance_30]))
+		[KB_221055_Instance_30]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_71]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_73]))
 
 ([KB_938545_Instance_250] of  Widget
 
@@ -4383,10 +4183,6 @@
 
 	(name ":SLOT-CONSTRAINTS")
 	(property_list [KB_933314_Instance_67]))
-
-([KB_938545_Instance_255] of  Widget
-
-	(name ":DIRECT-SUPERSLOTS"))
 
 ([KB_938545_Instance_256] of  Widget
 
@@ -4701,10 +4497,6 @@
 ([KB_938545_Instance_335] of  Widget
 
 	(name ":SLOT-CONSTRAINTS"))
-
-([KB_938545_Instance_338] of  Widget
-
-	(name ":DIRECT-SUPERSLOTS"))
 
 ([KB_938545_Instance_339] of  Widget
 
@@ -5158,916 +4950,6 @@
 ([KB_938545_Instance_411] of  Property_List
 )
 
-([KB_938545_Instance_415] of  Property_List
-
-	(name "slot widget properties")
-	(properties
-		[KB_938545_Instance_416]
-		[KB_938545_Instance_418]
-		[KB_938545_Instance_422]
-		[KB_938545_Instance_423]
-		[KB_938545_Instance_425]
-		[KB_938545_Instance_427]
-		[KB_938545_Instance_429]
-		[KB_938545_Instance_430]
-		[KB_938545_Instance_454]
-		[KB_938545_Instance_456]
-		[KB_938545_Instance_459]
-		[KB_938545_Instance_467]
-		[KB_938545_Instance_471]
-		[KB_938545_Instance_473]
-		[KB_938545_Instance_475]
-		[KB_938545_Instance_477]
-		[KB_938545_Instance_479]
-		[KB_938545_Instance_481]
-		[KB_938545_Instance_483]
-		[KB_938545_Instance_485]
-		[KB_938545_Instance_487]
-		[KB_938545_Instance_489]
-		[KB_938545_Instance_491]
-		[KB_938545_Instance_493]
-		[KB_221055_Instance_42]
-		[KB_221055_Instance_46]))
-
-([KB_938545_Instance_416] of  Widget
-
-	(height 0)
-	(label "Cardinality")
-	(name ":SLOT-MINIMUM-CARDINALITY")
-	(property_list [KB_938545_Instance_417])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_417] of  Property_List
-)
-
-([KB_938545_Instance_418] of  Widget
-
-	(name ":SLOT-CONSTRAINTS"))
-
-([KB_938545_Instance_421] of  Widget
-
-	(name ":DIRECT-SUPERSLOTS"))
-
-([KB_938545_Instance_422] of  Widget
-
-	(name ":DIRECT-SUBSLOTS"))
-
-([KB_938545_Instance_423] of  Widget
-
-	(height 0)
-	(label "Default")
-	(name ":SLOT-DEFAULTS")
-	(property_list [KB_938545_Instance_424])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_424] of  Property_List
-)
-
-([KB_938545_Instance_425] of  Widget
-
-	(height 0)
-	(label "Maximum")
-	(name ":SLOT-NUMERIC-MAXIMUM")
-	(property_list [KB_938545_Instance_426])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_426] of  Property_List
-)
-
-([KB_938545_Instance_427] of  Widget
-
-	(height 0)
-	(label "Minimum")
-	(name ":SLOT-NUMERIC-MINIMUM")
-	(property_list [KB_938545_Instance_428])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_428] of  Property_List
-)
-
-([KB_938545_Instance_429] of  Widget
-
-	(name ":ASSOCIATED-FACET"))
-
-([KB_938545_Instance_430] of  Widget
-
-	(height 173)
-	(label "Name")
-	(name ":NAME")
-	(property_list [KB_938545_Instance_431])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.RDFPropertyMetadataWidget")
-	(width 300)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_431] of  Property_List
-
-	(properties
-		[KB_938545_Instance_432]
-		[KB_938545_Instance_436]
-		[KB_938545_Instance_440]
-		[KB_938545_Instance_444]
-		[KB_938545_Instance_448]))
-
-([KB_938545_Instance_432] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [KB_938545_Instance_433])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_433] of  Property_List
-
-	(properties
-		[KB_938545_Instance_434]
-		[KB_938545_Instance_435]))
-
-([KB_938545_Instance_434] of  Widget
-
-	(height 30)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_435] of  Widget
-
-	(height 107)
-	(is_hidden FALSE)
-	(label "Comment")
-	(name "rdfs:comment")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 0)
-	(y 30))
-
-([KB_938545_Instance_436] of  Widget
-
-	(height 138)
-	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
-	(name ":OWL-EQUIVALENT-SLOTS")
-	(property_list [KB_938545_Instance_437])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 266)
-	(x 7)
-	(y 27))
-
-([KB_938545_Instance_437] of  Property_List
-
-	(properties
-		[KB_938545_Instance_438]
-		[KB_938545_Instance_439]))
-
-([KB_938545_Instance_438] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_439] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_440] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
-	(property_list [KB_938545_Instance_441])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_441] of  Property_List
-
-	(properties
-		[KB_938545_Instance_442]
-		[KB_938545_Instance_443]))
-
-([KB_938545_Instance_442] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_443] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_444] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
-	(property_list [KB_938545_Instance_445])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_445] of  Property_List
-
-	(properties
-		[KB_938545_Instance_446]
-		[KB_938545_Instance_447]))
-
-([KB_938545_Instance_446] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_447] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_448] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
-	(name "owl:equivalentProperty")
-	(property_list [KB_938545_Instance_449])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_449] of  Property_List
-
-	(properties
-		[KB_938545_Instance_450]
-		[KB_938545_Instance_451]))
-
-([KB_938545_Instance_450] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_451] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_454] of  Widget
-
-	(height 0)
-	(label "Range Type")
-	(name ":SLOT-VALUE-TYPE")
-	(property_list [KB_938545_Instance_455])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_455] of  Property_List
-)
-
-([KB_938545_Instance_456] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[KB_938545_Instance_457]
-		[KB_938545_Instance_458]))
-
-([KB_938545_Instance_457] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([KB_938545_Instance_458] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<all>>"))
-
-([KB_938545_Instance_459] of  Widget
-
-	(height 220)
-	(is_hidden FALSE)
-	(label "Domain")
-	(name ":DIRECT-DOMAIN")
-	(property_list [KB_938545_Instance_460])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.domain.OWLDomainWidget")
-	(width 200)
-	(x 0)
-	(y 170))
-
-([KB_938545_Instance_460] of  Property_List
-
-	(properties
-		[KB_938545_Instance_461]
-		[KB_938545_Instance_462]
-		[KB_938545_Instance_463]
-		[KB_938545_Instance_464]
-		[KB_938545_Instance_465]
-		[KB_938545_Instance_466]))
-
-([KB_938545_Instance_461] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-View Selected Instances"))
-
-([KB_938545_Instance_462] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Create Instance"))
-
-([KB_938545_Instance_463] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-References"))
-
-([KB_938545_Instance_464] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Add"))
-
-([KB_938545_Instance_465] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Remove"))
-
-([KB_938545_Instance_466] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Selected Instances"))
-
-([KB_938545_Instance_467] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":SLOT-VALUES")
-	(property_list [KB_938545_Instance_468])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_468] of  Property_List
-)
-
-([KB_938545_Instance_471] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DOCUMENTATION")
-	(property_list [KB_938545_Instance_472])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_472] of  Property_List
-)
-
-([KB_938545_Instance_473] of  Widget
-
-	(height 170)
-	(is_hidden FALSE)
-	(name "protege:inferredType")
-	(property_list [KB_938545_Instance_474])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
-	(width 300)
-	(x 300)
-	(y 0))
-
-([KB_938545_Instance_474] of  Property_List
-)
-
-([KB_938545_Instance_475] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":SLOT-MAXIMUM-CARDINALITY")
-	(property_list [KB_938545_Instance_476])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_476] of  Property_List
-)
-
-([KB_938545_Instance_477] of  Widget
-
-	(is_hidden FALSE)
-	(name "owl:versionInfo")
-	(property_list [KB_938545_Instance_478]))
-
-([KB_938545_Instance_478] of  Property_List
-)
-
-([KB_938545_Instance_479] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
-	(property_list [KB_938545_Instance_480]))
-
-([KB_938545_Instance_480] of  Property_List
-)
-
-([KB_938545_Instance_481] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:label")
-	(property_list [KB_938545_Instance_482]))
-
-([KB_938545_Instance_482] of  Property_List
-)
-
-([KB_938545_Instance_483] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
-	(property_list [KB_938545_Instance_484]))
-
-([KB_938545_Instance_484] of  Property_List
-)
-
-([KB_938545_Instance_485] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:comment")
-	(property_list [KB_938545_Instance_486]))
-
-([KB_938545_Instance_486] of  Property_List
-)
-
-([KB_938545_Instance_487] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "rdfs:domain")
-	(property_list [KB_938545_Instance_488])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_488] of  Property_List
-)
-
-([KB_938545_Instance_489] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "owl:equivalentProperty")
-	(property_list [KB_938545_Instance_490])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_490] of  Property_List
-)
-
-([KB_938545_Instance_491] of  Widget
-
-	(height 220)
-	(is_hidden FALSE)
-	(name "rdfs:range")
-	(property_list [KB_938545_Instance_492])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.range.OWLRangeWidget")
-	(width 200)
-	(x 200)
-	(y 170))
-
-([KB_938545_Instance_492] of  Property_List
-)
-
-([KB_938545_Instance_493] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DIRECT-TYPE")
-	(property_list [KB_938545_Instance_494])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_494] of  Property_List
-)
-
-([KB_938545_Instance_498] of  Property_List
-
-	(name "slot widget properties")
-	(properties
-		[KB_938545_Instance_499]
-		[KB_938545_Instance_501]
-		[KB_938545_Instance_505]
-		[KB_938545_Instance_506]
-		[KB_938545_Instance_508]
-		[KB_938545_Instance_510]
-		[KB_938545_Instance_512]
-		[KB_938545_Instance_513]
-		[KB_938545_Instance_537]
-		[KB_938545_Instance_539]
-		[KB_938545_Instance_542]
-		[KB_938545_Instance_550]
-		[KB_938545_Instance_554]
-		[KB_938545_Instance_556]
-		[KB_938545_Instance_558]
-		[KB_938545_Instance_560]
-		[KB_938545_Instance_562]
-		[KB_938545_Instance_564]
-		[KB_938545_Instance_566]
-		[KB_938545_Instance_568]
-		[KB_938545_Instance_570]
-		[KB_938545_Instance_572]
-		[KB_938545_Instance_574]
-		[KB_938545_Instance_576]
-		[KB_221055_Instance_50]
-		[KB_221055_Instance_54]))
-
-([KB_938545_Instance_499] of  Widget
-
-	(height 0)
-	(label "Cardinality")
-	(name ":SLOT-MINIMUM-CARDINALITY")
-	(property_list [KB_938545_Instance_500])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_500] of  Property_List
-)
-
-([KB_938545_Instance_501] of  Widget
-
-	(name ":SLOT-CONSTRAINTS"))
-
-([KB_938545_Instance_504] of  Widget
-
-	(name ":DIRECT-SUPERSLOTS"))
-
-([KB_938545_Instance_505] of  Widget
-
-	(name ":DIRECT-SUBSLOTS"))
-
-([KB_938545_Instance_506] of  Widget
-
-	(height 0)
-	(label "Default")
-	(name ":SLOT-DEFAULTS")
-	(property_list [KB_938545_Instance_507])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_507] of  Property_List
-)
-
-([KB_938545_Instance_508] of  Widget
-
-	(height 0)
-	(label "Maximum")
-	(name ":SLOT-NUMERIC-MAXIMUM")
-	(property_list [KB_938545_Instance_509])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_509] of  Property_List
-)
-
-([KB_938545_Instance_510] of  Widget
-
-	(height 0)
-	(label "Minimum")
-	(name ":SLOT-NUMERIC-MINIMUM")
-	(property_list [KB_938545_Instance_511])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_511] of  Property_List
-)
-
-([KB_938545_Instance_512] of  Widget
-
-	(name ":ASSOCIATED-FACET"))
-
-([KB_938545_Instance_513] of  Widget
-
-	(height 173)
-	(label "Name")
-	(name ":NAME")
-	(property_list [KB_938545_Instance_514])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.RDFPropertyMetadataWidget")
-	(width 300)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_514] of  Property_List
-
-	(properties
-		[KB_938545_Instance_515]
-		[KB_938545_Instance_519]
-		[KB_938545_Instance_523]
-		[KB_938545_Instance_527]
-		[KB_938545_Instance_531]))
-
-([KB_938545_Instance_515] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [KB_938545_Instance_516])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_516] of  Property_List
-
-	(properties
-		[KB_938545_Instance_517]
-		[KB_938545_Instance_518]))
-
-([KB_938545_Instance_517] of  Widget
-
-	(height 30)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_518] of  Widget
-
-	(height 107)
-	(is_hidden FALSE)
-	(label "Comment")
-	(name "rdfs:comment")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 0)
-	(y 30))
-
-([KB_938545_Instance_519] of  Widget
-
-	(height 138)
-	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
-	(name ":OWL-EQUIVALENT-SLOTS")
-	(property_list [KB_938545_Instance_520])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 266)
-	(x 7)
-	(y 27))
-
-([KB_938545_Instance_520] of  Property_List
-
-	(properties
-		[KB_938545_Instance_521]
-		[KB_938545_Instance_522]))
-
-([KB_938545_Instance_521] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_522] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_523] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
-	(property_list [KB_938545_Instance_524])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_524] of  Property_List
-
-	(properties
-		[KB_938545_Instance_525]
-		[KB_938545_Instance_526]))
-
-([KB_938545_Instance_525] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_526] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_527] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
-	(property_list [KB_938545_Instance_528])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_528] of  Property_List
-
-	(properties
-		[KB_938545_Instance_529]
-		[KB_938545_Instance_530]))
-
-([KB_938545_Instance_529] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_530] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_531] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
-	(name "owl:equivalentProperty")
-	(property_list [KB_938545_Instance_532])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_532] of  Property_List
-
-	(properties
-		[KB_938545_Instance_533]
-		[KB_938545_Instance_534]))
-
-([KB_938545_Instance_533] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_534] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_537] of  Widget
-
-	(height 0)
-	(label "Range Type")
-	(name ":SLOT-VALUE-TYPE")
-	(property_list [KB_938545_Instance_538])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_538] of  Property_List
-)
-
-([KB_938545_Instance_539] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[KB_938545_Instance_540]
-		[KB_938545_Instance_541]))
-
-([KB_938545_Instance_540] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([KB_938545_Instance_541] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<all>>"))
-
-([KB_938545_Instance_542] of  Widget
-
-	(height 220)
-	(is_hidden FALSE)
-	(label "Domain")
-	(name ":DIRECT-DOMAIN")
-	(property_list [KB_938545_Instance_543])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.domain.OWLDomainWidget")
-	(width 200)
-	(x 0)
-	(y 170))
-
-([KB_938545_Instance_543] of  Property_List
-
-	(properties
-		[KB_938545_Instance_544]
-		[KB_938545_Instance_545]
-		[KB_938545_Instance_546]
-		[KB_938545_Instance_547]
-		[KB_938545_Instance_548]
-		[KB_938545_Instance_549]))
-
-([KB_938545_Instance_544] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-View Selected Instances"))
-
-([KB_938545_Instance_545] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Create Instance"))
-
-([KB_938545_Instance_546] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-References"))
-
-([KB_938545_Instance_547] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Add"))
-
-([KB_938545_Instance_548] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Remove"))
-
-([KB_938545_Instance_549] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Selected Instances"))
-
-([KB_938545_Instance_550] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":SLOT-VALUES")
-	(property_list [KB_938545_Instance_551])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_551] of  Property_List
-)
-
-([KB_938545_Instance_554] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DOCUMENTATION")
-	(property_list [KB_938545_Instance_555])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_555] of  Property_List
-)
-
-([KB_938545_Instance_556] of  Widget
-
-	(height 170)
-	(is_hidden FALSE)
-	(name "protege:inferredType")
-	(property_list [KB_938545_Instance_557])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
-	(width 300)
-	(x 300)
-	(y 0))
-
-([KB_938545_Instance_557] of  Property_List
-)
-
-([KB_938545_Instance_558] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":SLOT-MAXIMUM-CARDINALITY")
-	(property_list [KB_938545_Instance_559])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_559] of  Property_List
-)
-
 ([KB_938545_Instance_56] of  Property_List
 
 	(name "slot widget properties")
@@ -6099,51 +4981,6 @@
 		[KB_221055_Instance_10]
 		[KB_221055_Instance_14]))
 
-([KB_938545_Instance_560] of  Widget
-
-	(is_hidden FALSE)
-	(name "owl:versionInfo")
-	(property_list [KB_938545_Instance_561]))
-
-([KB_938545_Instance_561] of  Property_List
-)
-
-([KB_938545_Instance_562] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
-	(property_list [KB_938545_Instance_563]))
-
-([KB_938545_Instance_563] of  Property_List
-)
-
-([KB_938545_Instance_564] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:label")
-	(property_list [KB_938545_Instance_565]))
-
-([KB_938545_Instance_565] of  Property_List
-)
-
-([KB_938545_Instance_566] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
-	(property_list [KB_938545_Instance_567]))
-
-([KB_938545_Instance_567] of  Property_List
-)
-
-([KB_938545_Instance_568] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:comment")
-	(property_list [KB_938545_Instance_569]))
-
-([KB_938545_Instance_569] of  Property_List
-)
-
 ([KB_938545_Instance_57] of  Widget
 
 	(height 0)
@@ -6154,464 +4991,17 @@
 	(x 0)
 	(y 0))
 
-([KB_938545_Instance_570] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "rdfs:domain")
-	(property_list [KB_938545_Instance_571])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_571] of  Property_List
-)
-
-([KB_938545_Instance_572] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "owl:equivalentProperty")
-	(property_list [KB_938545_Instance_573])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_573] of  Property_List
-)
-
-([KB_938545_Instance_574] of  Widget
-
-	(height 220)
-	(is_hidden FALSE)
-	(name "rdfs:range")
-	(property_list [KB_938545_Instance_575])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.range.OWLRangeWidget")
-	(width 200)
-	(x 200)
-	(y 170))
-
-([KB_938545_Instance_575] of  Property_List
-)
-
-([KB_938545_Instance_576] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DIRECT-TYPE")
-	(property_list [KB_938545_Instance_577])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_577] of  Property_List
-)
-
 ([KB_938545_Instance_58] of  Property_List
 )
-
-([KB_938545_Instance_581] of  Property_List
-
-	(name "slot widget properties")
-	(properties
-		[KB_938545_Instance_582]
-		[KB_938545_Instance_584]
-		[KB_938545_Instance_588]
-		[KB_938545_Instance_589]
-		[KB_938545_Instance_591]
-		[KB_938545_Instance_593]
-		[KB_938545_Instance_595]
-		[KB_938545_Instance_596]
-		[KB_938545_Instance_620]
-		[KB_938545_Instance_622]
-		[KB_938545_Instance_625]
-		[KB_938545_Instance_633]
-		[KB_938545_Instance_637]
-		[KB_938545_Instance_639]
-		[KB_938545_Instance_641]
-		[KB_938545_Instance_643]
-		[KB_938545_Instance_645]
-		[KB_938545_Instance_647]
-		[KB_938545_Instance_649]
-		[KB_938545_Instance_651]
-		[KB_938545_Instance_653]
-		[KB_938545_Instance_655]
-		[KB_938545_Instance_657]
-		[KB_938545_Instance_659]
-		[KB_221055_Instance_58]
-		[KB_221055_Instance_62]))
-
-([KB_938545_Instance_582] of  Widget
-
-	(height 0)
-	(label "Cardinality")
-	(name ":SLOT-MINIMUM-CARDINALITY")
-	(property_list [KB_938545_Instance_583])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_583] of  Property_List
-)
-
-([KB_938545_Instance_584] of  Widget
-
-	(name ":SLOT-CONSTRAINTS"))
-
-([KB_938545_Instance_587] of  Widget
-
-	(name ":DIRECT-SUPERSLOTS"))
-
-([KB_938545_Instance_588] of  Widget
-
-	(name ":DIRECT-SUBSLOTS"))
-
-([KB_938545_Instance_589] of  Widget
-
-	(height 0)
-	(label "Default")
-	(name ":SLOT-DEFAULTS")
-	(property_list [KB_938545_Instance_590])
-	(width 0)
-	(x 0)
-	(y 0))
 
 ([KB_938545_Instance_59] of  Widget
 
 	(name ":SLOT-CONSTRAINTS")
 	(property_list [KB_933314_Instance_61]))
 
-([KB_938545_Instance_590] of  Property_List
-)
-
-([KB_938545_Instance_591] of  Widget
-
-	(height 0)
-	(label "Maximum")
-	(name ":SLOT-NUMERIC-MAXIMUM")
-	(property_list [KB_938545_Instance_592])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_592] of  Property_List
-)
-
-([KB_938545_Instance_593] of  Widget
-
-	(height 0)
-	(label "Minimum")
-	(name ":SLOT-NUMERIC-MINIMUM")
-	(property_list [KB_938545_Instance_594])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_594] of  Property_List
-)
-
-([KB_938545_Instance_595] of  Widget
-
-	(name ":ASSOCIATED-FACET"))
-
-([KB_938545_Instance_596] of  Widget
-
-	(height 173)
-	(label "Name")
-	(name ":NAME")
-	(property_list [KB_938545_Instance_597])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.RDFPropertyMetadataWidget")
-	(width 300)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_597] of  Property_List
-
-	(properties
-		[KB_938545_Instance_598]
-		[KB_938545_Instance_602]
-		[KB_938545_Instance_606]
-		[KB_938545_Instance_610]
-		[KB_938545_Instance_614]))
-
-([KB_938545_Instance_598] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [KB_938545_Instance_599])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_599] of  Property_List
-
-	(properties
-		[KB_938545_Instance_600]
-		[KB_938545_Instance_601]))
-
-([KB_938545_Instance_600] of  Widget
-
-	(height 30)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_601] of  Widget
-
-	(height 107)
-	(is_hidden FALSE)
-	(label "Comment")
-	(name "rdfs:comment")
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 0)
-	(y 30))
-
-([KB_938545_Instance_602] of  Widget
-
-	(height 138)
-	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
-	(name ":OWL-EQUIVALENT-SLOTS")
-	(property_list [KB_938545_Instance_603])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 266)
-	(x 7)
-	(y 27))
-
-([KB_938545_Instance_603] of  Property_List
-
-	(properties
-		[KB_938545_Instance_604]
-		[KB_938545_Instance_605]))
-
-([KB_938545_Instance_604] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_605] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_606] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:sameAs")
-	(name "owl:sameAs")
-	(property_list [KB_938545_Instance_607])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_607] of  Property_List
-
-	(properties
-		[KB_938545_Instance_608]
-		[KB_938545_Instance_609]))
-
-([KB_938545_Instance_608] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_609] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_610] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:differentFrom")
-	(name "owl:differentFrom")
-	(property_list [KB_938545_Instance_611])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_611] of  Property_List
-
-	(properties
-		[KB_938545_Instance_612]
-		[KB_938545_Instance_613]))
-
-([KB_938545_Instance_612] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_613] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_614] of  Widget
-
-	(height 137)
-	(is_hidden FALSE)
-	(label "owl:equivalentProperty")
-	(name "owl:equivalentProperty")
-	(property_list [KB_938545_Instance_615])
-	(widget_class_name "edu.stanford.smi.protege.widget.FormWidget")
-	(width 286)
-	(x 7)
-	(y 28))
-
-([KB_938545_Instance_615] of  Property_List
-
-	(properties
-		[KB_938545_Instance_616]
-		[KB_938545_Instance_617]))
-
-([KB_938545_Instance_616] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-View References to Value  "))
-
-([KB_938545_Instance_617] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Instance"))
-
-([KB_938545_Instance_62] of  Widget
-
-	(name ":DIRECT-SUPERSLOTS"))
-
-([KB_938545_Instance_620] of  Widget
-
-	(height 0)
-	(label "Range Type")
-	(name ":SLOT-VALUE-TYPE")
-	(property_list [KB_938545_Instance_621])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_621] of  Property_List
-)
-
-([KB_938545_Instance_622] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[KB_938545_Instance_623]
-		[KB_938545_Instance_624]))
-
-([KB_938545_Instance_623] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([KB_938545_Instance_624] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<all>>"))
-
-([KB_938545_Instance_625] of  Widget
-
-	(height 220)
-	(is_hidden FALSE)
-	(label "Domain")
-	(name ":DIRECT-DOMAIN")
-	(property_list [KB_938545_Instance_626])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.domain.OWLDomainWidget")
-	(width 200)
-	(x 0)
-	(y 170))
-
-([KB_938545_Instance_626] of  Property_List
-
-	(properties
-		[KB_938545_Instance_627]
-		[KB_938545_Instance_628]
-		[KB_938545_Instance_629]
-		[KB_938545_Instance_630]
-		[KB_938545_Instance_631]
-		[KB_938545_Instance_632]))
-
-([KB_938545_Instance_627] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-View Selected Instances"))
-
-([KB_938545_Instance_628] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Create Instance"))
-
-([KB_938545_Instance_629] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-References"))
-
 ([KB_938545_Instance_63] of  Widget
 
 	(name ":DIRECT-SUBSLOTS"))
-
-([KB_938545_Instance_630] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Add"))
-
-([KB_938545_Instance_631] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Remove"))
-
-([KB_938545_Instance_632] of  Boolean
-
-	(boolean_value FALSE)
-	(name "ButtonDisplayed-Delete Selected Instances"))
-
-([KB_938545_Instance_633] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":SLOT-VALUES")
-	(property_list [KB_938545_Instance_634])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_634] of  Property_List
-)
-
-([KB_938545_Instance_637] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DOCUMENTATION")
-	(property_list [KB_938545_Instance_638])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_638] of  Property_List
-)
-
-([KB_938545_Instance_639] of  Widget
-
-	(height 170)
-	(is_hidden FALSE)
-	(name "protege:inferredType")
-	(property_list [KB_938545_Instance_640])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
-	(width 300)
-	(x 300)
-	(y 0))
 
 ([KB_938545_Instance_64] of  Widget
 
@@ -6623,119 +5013,8 @@
 	(x 0)
 	(y 0))
 
-([KB_938545_Instance_640] of  Property_List
-)
-
-([KB_938545_Instance_641] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":SLOT-MAXIMUM-CARDINALITY")
-	(property_list [KB_938545_Instance_642])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_642] of  Property_List
-)
-
-([KB_938545_Instance_643] of  Widget
-
-	(is_hidden FALSE)
-	(name "owl:versionInfo")
-	(property_list [KB_938545_Instance_644]))
-
-([KB_938545_Instance_644] of  Property_List
-)
-
-([KB_938545_Instance_645] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:isDefinedBy")
-	(property_list [KB_938545_Instance_646]))
-
-([KB_938545_Instance_646] of  Property_List
-)
-
-([KB_938545_Instance_647] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:label")
-	(property_list [KB_938545_Instance_648]))
-
-([KB_938545_Instance_648] of  Property_List
-)
-
-([KB_938545_Instance_649] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
-	(property_list [KB_938545_Instance_650]))
-
 ([KB_938545_Instance_65] of  Property_List
 )
-
-([KB_938545_Instance_650] of  Property_List
-)
-
-([KB_938545_Instance_651] of  Widget
-
-	(is_hidden FALSE)
-	(name "rdfs:comment")
-	(property_list [KB_938545_Instance_652]))
-
-([KB_938545_Instance_652] of  Property_List
-)
-
-([KB_938545_Instance_653] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "rdfs:domain")
-	(property_list [KB_938545_Instance_654])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_654] of  Property_List
-)
-
-([KB_938545_Instance_655] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name "owl:equivalentProperty")
-	(property_list [KB_938545_Instance_656])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([KB_938545_Instance_656] of  Property_List
-)
-
-([KB_938545_Instance_657] of  Widget
-
-	(height 220)
-	(is_hidden FALSE)
-	(name "rdfs:range")
-	(property_list [KB_938545_Instance_658])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.properties.range.OWLRangeWidget")
-	(width 200)
-	(x 200)
-	(y 170))
-
-([KB_938545_Instance_658] of  Property_List
-)
-
-([KB_938545_Instance_659] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":DIRECT-TYPE")
-	(property_list [KB_938545_Instance_660])
-	(width 0)
-	(x 0)
-	(y 0))
 
 ([KB_938545_Instance_66] of  Widget
 
@@ -6746,9 +5025,6 @@
 	(width 0)
 	(x 0)
 	(y 0))
-
-([KB_938545_Instance_660] of  Property_List
-)
 
 ([KB_938545_Instance_661] of  Widget
 
@@ -6807,10 +5083,6 @@
 
 ([KB_938545_Instance_67] of  Property_List
 )
-
-([KB_938545_Instance_670] of  Widget
-
-	(name ":DIRECT-SUPERSLOTS"))
 
 ([KB_938545_Instance_671] of  Widget
 
@@ -7401,6 +5673,9 @@
 ([KB_941921_Instance_7] of  Property_List
 )
 
+([KB_970965_Instance_0] of  Map
+)
+
 ([OWL_ProjectKB_Instance_3] of  Integer
 
 	(integer_value 130)
@@ -7423,12 +5698,12 @@
 	(customized_instance_widgets
 		[PAL_FORM_WIDGET]
 		[KB_713803_Instance_477]
-		[KB_713803_Instance_780]
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[KB_713803_Instance_693]
+		[KB_713803_Instance_780]
 		[KB_301165_Instance_856]
-		[KB_713803_Instance_648]
+		[KB_713803_Instance_693]
 		[KB_691299_Instance_537]
+		[KB_713803_Instance_648]
 		[KB_691299_Instance_398]
 		[KB_303942_Instance_68]
 		[KB_938545_Instance_166]
@@ -7512,18 +5787,21 @@
 		":SYSTEM-CLASS"
 		"owl:oneOf"
 		"owl:DataRange"
-		"rdf:Property"
 		"owl:DeprecatedProperty"
-		"owl:Class"
+		"rdf:Property"
 		"owl:DeprecatedClass"
+		"owl:Class"
 		"rdf:Statement"
 		"rdf:type"
-		"rdf:subject"
 		"rdfs:Class"
+		"rdf:subject"
 		"rdf:predicate"
-		"rdf:object"
 		":OWL-ANONYMOUS-ROOT"
+		"rdf:object"
 		"rdfs:Container"
+		"rdf:Alt"
+		"rdf:Bag"
+		"rdf:Seq"
 		"owl:AllDifferent"
 		"owl:distinctMembers"
 		"rdfs:Literal"
@@ -7651,40 +5929,12 @@
 ([XY_Instance_1016] of  Property_List
 )
 
-([XY_Instance_102] of  Widget
-
-	(height 160)
-	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
-	(property_list [XY_Instance_103])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
-	(width 300)
-	(x 300)
-	(y 0))
-
-([XY_Instance_103] of  Property_List
-)
-
 ([XY_Instance_104] of  Property_List
 
 	(name "layout properties")
 	(properties
 		[XY_Instance_105]
 		[XY_Instance_106]))
-
-([XY_Instance_1042] of  Widget
-
-	(height 454)
-	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
-	(property_list [XY_Instance_1043])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
-	(width 463)
-	(x 0)
-	(y 0))
-
-([XY_Instance_1043] of  Property_List
-)
 
 ([XY_Instance_105] of  String
 
@@ -7957,7 +6207,12 @@
 		[KB_635552_Instance_20]
 		[KB_635552_Instance_22]
 		[KB_635552_Instance_24]
-		[KB_938545_Instance_8]))
+		[KB_938545_Instance_8]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_51]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_53]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_55]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_57]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_59]))
 
 ([XY_Instance_2] of  Widget
 
@@ -8027,61 +6282,6 @@
 
 	(name ":CREATION-TIMESTAMP"))
 
-([XY_Instance_302] of  Widget
-
-	(height 454)
-	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
-	(property_list [XY_Instance_303])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
-	(width 463)
-	(x 0)
-	(y 0))
-
-([XY_Instance_303] of  Property_List
-)
-
-([XY_Instance_344] of  Widget
-
-	(height 454)
-	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
-	(property_list [XY_Instance_345])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
-	(width 463)
-	(x 0)
-	(y 0))
-
-([XY_Instance_345] of  Property_List
-)
-
-([XY_Instance_346] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(name ":OWL-LOGICAL-OPERANDS")
-	(property_list [XY_Instance_347])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([XY_Instance_347] of  Property_List
-)
-
-([XY_Instance_386] of  Widget
-
-	(height 454)
-	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
-	(property_list [XY_Instance_387])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
-	(width 463)
-	(x 0)
-	(y 0))
-
-([XY_Instance_387] of  Property_List
-)
-
 ([XY_Instance_4] of  Widget
 
 	(height 100)
@@ -8135,57 +6335,6 @@
 ([XY_Instance_413] of  Widget
 
 	(name ":DIRECT-SUBCLASSES"))
-
-([XY_Instance_414] of  Widget
-
-	(height 160)
-	(label "Superclasses")
-	(name ":DIRECT-SUPERCLASSES")
-	(property_list [XY_Instance_415])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.RDFSSuperclassesWidget")
-	(width 240)
-	(x 0)
-	(y 160))
-
-([XY_Instance_415] of  Property_List
-
-	(properties
-		[XY_Instance_416]
-		[XY_Instance_417]
-		[XY_Instance_418]
-		[XY_Instance_419]
-		[XY_Instance_420]
-		[XY_Instance_421]))
-
-([XY_Instance_416] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-View Selected Classes"))
-
-([XY_Instance_417] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Add"))
-
-([XY_Instance_418] of  Boolean
-
-	(boolean_value TRUE)
-	(name "ButtonDisplayed-Remove"))
-
-([XY_Instance_419] of  String
-
-	(name "ButtonDescription-View Selected Classes")
-	(string_value "View Selected Classes"))
-
-([XY_Instance_420] of  String
-
-	(name "ButtonDescription-Add")
-	(string_value "Select Classes"))
-
-([XY_Instance_421] of  String
-
-	(name "ButtonDescription-Remove")
-	(string_value "Remove Selected Classes"))
 
 ([XY_Instance_422] of  Widget
 
@@ -8311,7 +6460,9 @@
 		[KB_938545_Instance_160]
 		[KB_938545_Instance_162]
 		[KB_221055_Instance_18]
-		[KB_221055_Instance_22]))
+		[KB_221055_Instance_22]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_67]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_69]))
 
 ([XY_Instance_463] of  Widget
 
@@ -8340,10 +6491,6 @@
 	(width 200)
 	(x 400)
 	(y 190))
-
-([XY_Instance_469] of  Widget
-
-	(name ":DIRECT-SUPERSLOTS"))
 
 ([XY_Instance_470] of  Widget
 
@@ -8547,7 +6694,10 @@
 		[KB_635552_Instance_6]
 		[KB_635552_Instance_8]
 		[KB_941921_Instance_2]
-		[KB_941921_Instance_6]))
+		[KB_941921_Instance_6]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_61]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_63]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_65]))
 
 ([XY_Instance_541] of  Widget
 
@@ -9335,20 +7485,6 @@
 
 	(properties [KB_933314_Instance_11]))
 
-([XY_Instance_875] of  Widget
-
-	(height 454)
-	(is_hidden FALSE)
-	(name "rdfs:seeAlso")
-	(property_list [XY_Instance_876])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.metadata.AnnotationsWidget")
-	(width 463)
-	(x 0)
-	(y 0))
-
-([XY_Instance_876] of  Property_List
-)
-
 ([XY_Instance_89] of  Property_List
 
 	(properties
@@ -9505,7 +7641,7 @@
 	(is_hidden FALSE)
 	(label "Name")
 	(name ":PAL-NAME")
-	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
 	(width 275)
 	(x 0)
 	(y 0))
@@ -9527,7 +7663,7 @@
 	(is_hidden FALSE)
 	(label "Description")
 	(name ":PAL-DESCRIPTION")
-	(widget_class_name "edu.stanford.smi.protege.widget.TextAreaWidget")
+	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralAreaWidget")
 	(width 250)
 	(x 275)
 	(y 0))

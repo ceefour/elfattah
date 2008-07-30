@@ -1,0 +1,27 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix protege:  <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix default:  <http://elfattah.org/data/quran-001-alfatiha.owl#> .
+@prefix quran:   <http://elfattah.org/ontologies/quran-1.0.owl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://elfattah.org/data/quran-001-alfatiha.owl>
+      a       owl:Ontology ;
+      owl:imports <http://elfattah.org/ontologies/quran-1.0.owl> .
+
+default:AlFatehah1
+      a       quran:Ayat ;
+      rdfs:label "In the name of Allah, the Merciful, the Compassionate."@en , "بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ"@ar ;
+      quran:hasTafsir default:Tafsir_1 ;
+      quran:isAyatOf default:AlFatiha .
+
+default:AlFatiha
+      a       quran:Sura ;
+      rdfs:label "‏الفاتحة‎"@ar ;
+      quran:hasAyat default:AlFatehah1 .
+
+default:Tafsir_1
+      a       quran:Tafsir ;
+      rdfs:label "One of the many practices taught by Islam is that its followers should begin their activities in the name of God. This principle, if consciously and earnestly followed, will necessarily yield three beneficial results. First, one will be able to restrain oneself from many misdeed, since the habit of pronouncing the name of God is bound to make one wonder when about to commit some offence how such an act can be reconciled with the saying of God's holy name. Second, if a man pronounces the name of God before starting good and legitimate tasks, this act will ensue that both his starting point and his mental orientation are sound. Third - and this is the most important benefit - when a man begins something by pronouncing God's name, he will enjoy God's support and succour; God will bless his efforts and protect him from the machinations and temptation of Satan. For whenever man turns to God, God turns to him as well."@en ;
+      quran:isTafsirOf default:AlFatehah1 .

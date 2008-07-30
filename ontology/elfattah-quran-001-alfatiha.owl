@@ -11,9 +11,22 @@
   <owl:Ontology rdf:about="">
     <owl:imports rdf:resource="http://elfattah.org/ontologies/quran-1.0.owl"/>
   </owl:Ontology>
-  <quran:Sura rdf:ID="AlFatiha">
-    <rdfs:label xml:lang="ar">‏الفاتحة‎</rdfs:label>
-  </quran:Sura>
+  <quran:Ayat rdf:ID="AlFatehah1">
+    <quran:hasTafsir>
+      <quran:Tafsir rdf:ID="Tafsir_1">
+        <quran:isTafsirOf rdf:resource="#AlFatehah1"/>
+        <rdfs:label xml:lang="en">One of the many practices taught by Islam is that its followers should begin their activities in the name of God. This principle, if consciously and earnestly followed, will necessarily yield three beneficial results. First, one will be able to restrain oneself from many misdeed, since the habit of pronouncing the name of God is bound to make one wonder when about to commit some offence how such an act can be reconciled with the saying of God's holy name. Second, if a man pronounces the name of God before starting good and legitimate tasks, this act will ensue that both his starting point and his mental orientation are sound. Third - and this is the most important benefit - when a man begins something by pronouncing God's name, he will enjoy God's support and succour; God will bless his efforts and protect him from the machinations and temptation of Satan. For whenever man turns to God, God turns to him as well.</rdfs:label>
+      </quran:Tafsir>
+    </quran:hasTafsir>
+    <rdfs:label xml:lang="ar">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</rdfs:label>
+    <rdfs:label xml:lang="en">In the name of Allah, the Merciful, the Compassionate.</rdfs:label>
+    <quran:isAyatOf>
+      <quran:Sura rdf:ID="AlFatiha">
+        <quran:hasAyat rdf:resource="#AlFatehah1"/>
+        <rdfs:label xml:lang="ar">‏الفاتحة‎</rdfs:label>
+      </quran:Sura>
+    </quran:isAyatOf>
+  </quran:Ayat>
 </rdf:RDF>
 
 <!-- Created with Protege (with OWL Plugin 3.4, Build 130)  http://protege.stanford.edu -->
