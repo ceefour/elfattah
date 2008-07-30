@@ -1,4 +1,4 @@
-; Wed Jul 30 22:11:08 WIT 2008
+; Wed Jul 30 23:31:30 WIT 2008
 ; 
 ;+ (version "3.4")
 ;+ (build "Build 130")
@@ -6,11 +6,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10186]
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10187]
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10188]
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10189]
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10190]))
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10121]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10122]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10123]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10124]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10125]))
 
 ([CLSES_TAB] of  Widget
 
@@ -28,46 +28,46 @@
 ([elfattah-quran-001-alfatiha_ProjectKB_Instance_10] of  Property_List
 )
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_10186] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10121] of  String
 
 	(name "owl:Thing")
 	(string_value "%3ANAME"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_10187] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10122] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_10188] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10123] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_10189] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10124] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_10190] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10125] of  String
 
 	(name "owl:Class")
 	(string_value "%3ANAME"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_10191] of  Map_Entry
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10126] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_10192] of  Map_Entry
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10127] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_10193] of  Map_Entry
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10128] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
@@ -853,6 +853,9 @@
 ([KB_140180_Instance_9] of  Property_List
 )
 
+([KB_193313_Instance_3] of  Map
+)
+
 ([KB_221055_Instance_10] of  Widget
 
 	(height 0)
@@ -1311,9 +1314,9 @@
 ([KB_688283_Instance_0] of  Map
 
 	(entries
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10191]
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10192]
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10193]))
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10126]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10127]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10128]))
 
 ([KB_688283_Instance_116] of  String
 
@@ -5699,9 +5702,6 @@
 ([KB_941921_Instance_7] of  Property_List
 )
 
-([KB_970965_Instance_0] of  Map
-)
-
 ([OWL_ProjectKB_Instance_3] of  Integer
 
 	(integer_value 130)
@@ -5724,12 +5724,12 @@
 	(customized_instance_widgets
 		[PAL_FORM_WIDGET]
 		[KB_713803_Instance_477]
-		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[KB_713803_Instance_780]
-		[KB_301165_Instance_856]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[KB_713803_Instance_693]
-		[KB_691299_Instance_537]
+		[KB_301165_Instance_856]
 		[KB_713803_Instance_648]
+		[KB_691299_Instance_537]
 		[KB_691299_Instance_398]
 		[KB_303942_Instance_68]
 		[KB_938545_Instance_166]
@@ -5813,24 +5813,23 @@
 		":SYSTEM-CLASS"
 		"owl:oneOf"
 		"owl:DataRange"
-		"owl:DeprecatedProperty"
 		"rdf:Property"
-		"owl:DeprecatedClass"
+		"owl:DeprecatedProperty"
 		"owl:Class"
+		"owl:DeprecatedClass"
 		"rdf:Statement"
 		"rdf:type"
-		"rdfs:Class"
 		"rdf:subject"
+		"rdfs:Class"
 		"rdf:predicate"
-		":OWL-ANONYMOUS-ROOT"
 		"rdf:object"
+		":OWL-ANONYMOUS-ROOT"
 		"rdfs:Container"
 		"rdf:Alt"
 		"rdf:Bag"
 		"rdf:Seq"
 		"owl:AllDifferent"
 		"owl:distinctMembers"
-		"rdfs:Literal"
 		"owl:Nothing"
 		"rdf:List"
 		"rdf:first"

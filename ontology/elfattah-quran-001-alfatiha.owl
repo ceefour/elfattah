@@ -18,17 +18,33 @@
         <rdfs:label xml:lang="en">One of the many practices taught by Islam is that its followers should begin their activities in the name of God. This principle, if consciously and earnestly followed, will necessarily yield three beneficial results. First, one will be able to restrain oneself from many misdeed, since the habit of pronouncing the name of God is bound to make one wonder when about to commit some offence how such an act can be reconciled with the saying of God's holy name. Second, if a man pronounces the name of God before starting good and legitimate tasks, this act will ensue that both his starting point and his mental orientation are sound. Third - and this is the most important benefit - when a man begins something by pronouncing God's name, he will enjoy God's support and succour; God will bless his efforts and protect him from the machinations and temptation of Satan. For whenever man turns to God, God turns to him as well.</rdfs:label>
       </quran:Tafsir>
     </quran:hasTafsir>
-    <rdfs:label xml:lang="id">Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang.</rdfs:label>
-    <rdfs:label xml:lang="ar">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</rdfs:label>
     <rdfs:label xml:lang="en">In the name of Allah, the Merciful, the Compassionate.</rdfs:label>
+    <rdfs:label xml:lang="ar">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</rdfs:label>
+    <rdfs:label xml:lang="id">Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang.</rdfs:label>
+    <quran:ayatNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >1</quran:ayatNumber>
+    <quran:isAyatOf>
+      <quran:Ajza rdf:ID="Ajza_1">
+        <quran:hasAyat rdf:resource="#AlFatehah1"/>
+        <quran:isAjzaOf>
+          <rdf:Description rdf:about="http://elfattah.org/ontologies/quran-1.0.owl#theHolyQuran">
+            <quran:hasAjza rdf:resource="#Ajza_1"/>
+          </rdf:Description>
+        </quran:isAjzaOf>
+        <quran:ajzaNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</quran:ajzaNumber>
+      </quran:Ajza>
+    </quran:isAyatOf>
     <quran:isAyatOf>
       <quran:Sura rdf:ID="AlFatiha">
+        <rdfs:label xml:lang="ar">‏الفاتحة‎</rdfs:label>
+        <rdfs:label xml:lang="en">The Opening</rdfs:label>
+        <rdfs:label xml:lang="id">Pembukaan</rdfs:label>
+        <quran:hasAyat rdf:resource="#AlFatehah1"/>
+        <quran:suraNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</quran:suraNumber>
         <quran:transliteration rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >Al-Fatehah</quran:transliteration>
-        <quran:hasAyat rdf:resource="#AlFatehah1"/>
-        <rdfs:label xml:lang="id">Pembukaan</rdfs:label>
-        <rdfs:label xml:lang="en">The Opening</rdfs:label>
-        <rdfs:label xml:lang="ar">‏الفاتحة‎</rdfs:label>
       </quran:Sura>
     </quran:isAyatOf>
   </quran:Ayat>

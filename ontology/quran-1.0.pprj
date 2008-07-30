@@ -1,4 +1,4 @@
-; Wed Jul 30 22:42:01 WIT 2008
+; Wed Jul 30 23:31:32 WIT 2008
 ; 
 ;+ (version "3.4")
 ;+ (build "Build 130")
@@ -6,11 +6,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[elfattah-quran_ProjectKB_Instance_1839]
-		[elfattah-quran_ProjectKB_Instance_1840]
-		[elfattah-quran_ProjectKB_Instance_1841]
-		[elfattah-quran_ProjectKB_Instance_1842]
-		[elfattah-quran_ProjectKB_Instance_1843]))
+		[quran-1.0_ProjectKB_Instance_60]
+		[quran-1.0_ProjectKB_Instance_61]
+		[quran-1.0_ProjectKB_Instance_62]
+		[quran-1.0_ProjectKB_Instance_63]
+		[quran-1.0_ProjectKB_Instance_64]))
 
 ([CLSES_TAB] of  Widget
 
@@ -172,52 +172,6 @@
 
 ([elfattah-quran_ProjectKB_Instance_1830] of  Property_List
 )
-
-([elfattah-quran_ProjectKB_Instance_1839] of  String
-
-	(name "owl:Thing")
-	(string_value "%3ANAME"))
-
-([elfattah-quran_ProjectKB_Instance_1840] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([elfattah-quran_ProjectKB_Instance_1841] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([elfattah-quran_ProjectKB_Instance_1842] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([elfattah-quran_ProjectKB_Instance_1843] of  String
-
-	(name "owl:Class")
-	(string_value "%3ANAME"))
-
-([elfattah-quran_ProjectKB_Instance_1844] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([elfattah-quran_ProjectKB_Instance_1845] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([elfattah-quran_ProjectKB_Instance_1846] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
 
 ([elfattah-quran_ProjectKB_Instance_225] of  Widget
 
@@ -848,9 +802,9 @@
 ([KB_263471_Instance_0] of  Map
 
 	(entries
-		[elfattah-quran_ProjectKB_Instance_1844]
-		[elfattah-quran_ProjectKB_Instance_1845]
-		[elfattah-quran_ProjectKB_Instance_1846]))
+		[quran-1.0_ProjectKB_Instance_65]
+		[quran-1.0_ProjectKB_Instance_66]
+		[quran-1.0_ProjectKB_Instance_67]))
 
 ([KB_263471_Instance_10] of  Widget
 
@@ -1062,7 +1016,7 @@
 ([KB_263471_Instance_52] of  String
 
 	(name "owl_file_name")
-	(string_value "elfattah-quran.owl"))
+	(string_value "quran-1.0.owl"))
 
 ([KB_263471_Instance_6] of  Widget
 
@@ -1142,9 +1096,6 @@
 	(name "protege:ExternalResource")
 	(property_list [XY_Instance_890])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([KB_590986_Instance_3] of  Map
-)
 
 ([KB_632156_Instance_0] of  String
 
@@ -3790,6 +3741,9 @@
 	(boolean_value FALSE)
 	(name "DisabledByUser"))
 
+([KB_934320_Instance_3] of  Map
+)
+
 ([KB_938545_Instance_100] of  Widget
 
 	(height 220)
@@ -5731,12 +5685,12 @@
 	(customized_instance_widgets
 		[PAL_FORM_WIDGET]
 		[KB_713803_Instance_477]
-		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[KB_713803_Instance_780]
-		[KB_301165_Instance_856]
+		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[KB_713803_Instance_693]
-		[KB_691299_Instance_537]
+		[KB_301165_Instance_856]
 		[KB_713803_Instance_648]
+		[KB_691299_Instance_537]
 		[KB_691299_Instance_398]
 		[KB_303942_Instance_68]
 		[KB_938545_Instance_166]
@@ -5761,6 +5715,7 @@
 	(default_instance_widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget")
 	(default_slot_metaclass "owl:ObjectProperty")
 	(hidden_classes
+		"owl:disjointWith"
 		":FROM"
 		":TO"
 		"protege:inferredSuperclassOf"
@@ -5784,6 +5739,7 @@
 		"xsd:gYearMonth"
 		"xsd:unsignedLong"
 		"xsd:byte"
+		"xsd:anyURI"
 		"xsd:duration"
 		"xsd:token"
 		"xsd:NCName"
@@ -5793,9 +5749,11 @@
 		"xsd:gMonthDay"
 		"xsd:unsignedByte"
 		"xsd:nonNegativeInteger"
+		"xsd:QName"
 		"xsd:short"
 		"xsd:integer"
 		"xsd:normalizedString"
+		"rdfs:Datatype"
 		":DIRECTED-BINARY-RELATION"
 		"xsd:unsignedShort"
 		"xsd:double"
@@ -5808,8 +5766,13 @@
 		"rdf:type"
 		"rdf:subject"
 		"rdf:predicate"
-		":OWL-ANONYMOUS-ROOT"
 		"rdf:object"
+		":OWL-ANONYMOUS-ROOT"
+		"rdf:Alt"
+		"rdf:Bag"
+		"rdf:Seq"
+		"owl:AllDifferent"
+		"owl:distinctMembers"
 		"rdf:first"
 		"rdf:rest"
 		"owl:SymmetricProperty"
@@ -5866,6 +5829,52 @@
 		[KB_263471_Instance_8]
 		[KB_263471_Instance_32]
 		[KB_263471_Instance_16]))
+
+([quran-1.0_ProjectKB_Instance_60] of  String
+
+	(name "owl:Thing")
+	(string_value "%3ANAME"))
+
+([quran-1.0_ProjectKB_Instance_61] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([quran-1.0_ProjectKB_Instance_62] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([quran-1.0_ProjectKB_Instance_63] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([quran-1.0_ProjectKB_Instance_64] of  String
+
+	(name "owl:Class")
+	(string_value "%3ANAME"))
+
+([quran-1.0_ProjectKB_Instance_65] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([quran-1.0_ProjectKB_Instance_66] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([quran-1.0_ProjectKB_Instance_67] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
 
 ([SLOTS_TAB] of  Widget
 
