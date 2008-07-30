@@ -12,14 +12,16 @@
 
 default:AlFatehah1
       a       quran:Ayat ;
-      rdfs:label "In the name of Allah, the Merciful, the Compassionate."@en , "بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ"@ar ;
+      rdfs:label "Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang."@id , "In the name of Allah, the Merciful, the Compassionate."@en , "بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ"@ar ;
       quran:hasTafsir default:Tafsir_1 ;
       quran:isAyatOf default:AlFatiha .
 
 default:AlFatiha
       a       quran:Sura ;
-      rdfs:label "‏الفاتحة‎"@ar ;
-      quran:hasAyat default:AlFatehah1 .
+      rdfs:label "‏الفاتحة‎"@ar , "Pembukaan"@id , "The Opening"@en ;
+      quran:hasAyat default:AlFatehah1 ;
+      quran:transliteration
+              "Al-Fatehah"^^xsd:string .
 
 default:Tafsir_1
       a       quran:Tafsir ;

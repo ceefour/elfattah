@@ -1,4 +1,4 @@
-; Wed Jul 30 21:15:27 WIT 2008
+; Wed Jul 30 22:11:08 WIT 2008
 ; 
 ;+ (version "3.4")
 ;+ (build "Build 130")
@@ -6,11 +6,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10114]
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10115]
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10116]
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10117]
-		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10118]))
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10186]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10187]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10188]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10189]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10190]))
 
 ([CLSES_TAB] of  Widget
 
@@ -28,30 +28,51 @@
 ([elfattah-quran-001-alfatiha_ProjectKB_Instance_10] of  Property_List
 )
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_10114] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10186] of  String
 
 	(name "owl:Thing")
 	(string_value "%3ANAME"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_10115] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10187] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_10116] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10188] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_10117] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10189] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([elfattah-quran-001-alfatiha_ProjectKB_Instance_10118] of  String
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10190] of  String
 
 	(name "owl:Class")
 	(string_value "%3ANAME"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10191] of  Map_Entry
+
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10192] of  Map_Entry
+
+	(key "change_tracking_active")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([elfattah-quran-001-alfatiha_ProjectKB_Instance_10193] of  Map_Entry
+
+	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
 
 ([elfattah-quran-001-alfatiha_ProjectKB_Instance_11] of  Widget
 
@@ -82,7 +103,7 @@
 
 ([elfattah-quran-001-alfatiha_ProjectKB_Instance_17] of  Widget
 
-	(is_hidden TRUE)
+	(is_hidden FALSE)
 	(property_list [elfattah-quran-001-alfatiha_ProjectKB_Instance_18])
 	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
 
@@ -511,6 +532,7 @@
 	(display_multi_parent_class_icon FALSE)
 	(is_readonly FALSE)
 	(tabbed_instance_form_layout TRUE)
+	(undo_enabled TRUE)
 	(update_modification_slots FALSE))
 
 ([Instance_581] of  Widget
@@ -1287,7 +1309,11 @@
 )
 
 ([KB_688283_Instance_0] of  Map
-)
+
+	(entries
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10191]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10192]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_10193]))
 
 ([KB_688283_Instance_116] of  String
 
@@ -5826,18 +5852,43 @@
 		[Instance_2534]
 		[Instance_86]
 		[Instance_2600]
-		[FORMS_TAB]
 		[Instance_3234]
+		[KB_865583_Instance_8]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_21]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_37]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_47]
 		[Instance_43]
 		[CLSES_TAB]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_43]
 		[KB_865583_Instance_6]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_39]
+		[FORMS_TAB]
 		[INSTANCES_TAB]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_11]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_5]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_1]
 		[Instance_45]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_41]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_45]
 		[KB_865583_Instance_12]
-		[KB_865583_Instance_8]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_17]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_13]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_49]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_3]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_35]
 		[KB_865583_Instance_4]
 		[SLOTS_TAB]
-		[KB_865583_Instance_10]))
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_33]
+		[KB_865583_Instance_10]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_23]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_19]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_9]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_27]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_25]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_29]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_7]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_31]
+		[elfattah-quran-001-alfatiha_ProjectKB_Instance_15]))
 
 ([SLOTS_TAB] of  Widget
 

@@ -1,4 +1,4 @@
-; Wed Jul 30 21:12:54 WIT 2008
+; Wed Jul 30 22:42:01 WIT 2008
 ; 
 ;+ (version "3.4")
 ;+ (build "Build 130")
@@ -6,12 +6,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[elfattah-quran_ProjectKB_Instance_1814]
-		[elfattah-quran_ProjectKB_Instance_1815]
-		[elfattah-quran_ProjectKB_Instance_1816]
-		[elfattah-quran_ProjectKB_Instance_1817]
-		[elfattah-quran_ProjectKB_Instance_1818]
-		[elfattah-quran_ProjectKB_Instance_1819]))
+		[elfattah-quran_ProjectKB_Instance_1839]
+		[elfattah-quran_ProjectKB_Instance_1840]
+		[elfattah-quran_ProjectKB_Instance_1841]
+		[elfattah-quran_ProjectKB_Instance_1842]
+		[elfattah-quran_ProjectKB_Instance_1843]))
 
 ([CLSES_TAB] of  Widget
 
@@ -138,51 +137,82 @@
 ([elfattah-quran_ProjectKB_Instance_173] of  Property_List
 )
 
-([elfattah-quran_ProjectKB_Instance_1814] of  String
+([elfattah-quran_ProjectKB_Instance_1823] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:readOnly")
+	(property_list [elfattah-quran_ProjectKB_Instance_1824]))
+
+([elfattah-quran_ProjectKB_Instance_1824] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_1825] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:allowedParent")
+	(property_list [elfattah-quran_ProjectKB_Instance_1826]))
+
+([elfattah-quran_ProjectKB_Instance_1826] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_1827] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:readOnly")
+	(property_list [elfattah-quran_ProjectKB_Instance_1828]))
+
+([elfattah-quran_ProjectKB_Instance_1828] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_1829] of  Widget
+
+	(is_hidden FALSE)
+	(name "protege:allowedParent")
+	(property_list [elfattah-quran_ProjectKB_Instance_1830]))
+
+([elfattah-quran_ProjectKB_Instance_1830] of  Property_List
+)
+
+([elfattah-quran_ProjectKB_Instance_1839] of  String
 
 	(name "owl:Thing")
 	(string_value "%3ANAME"))
 
-([elfattah-quran_ProjectKB_Instance_1815] of  String
+([elfattah-quran_ProjectKB_Instance_1840] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([elfattah-quran_ProjectKB_Instance_1816] of  String
+([elfattah-quran_ProjectKB_Instance_1841] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([elfattah-quran_ProjectKB_Instance_1817] of  String
+([elfattah-quran_ProjectKB_Instance_1842] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([elfattah-quran_ProjectKB_Instance_1818] of  String
-
-	(name "Quran")
-	(string_value "transliteration"))
-
-([elfattah-quran_ProjectKB_Instance_1819] of  String
+([elfattah-quran_ProjectKB_Instance_1843] of  String
 
 	(name "owl:Class")
 	(string_value "%3ANAME"))
 
-([elfattah-quran_ProjectKB_Instance_1820] of  Map_Entry
+([elfattah-quran_ProjectKB_Instance_1844] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([elfattah-quran_ProjectKB_Instance_1821] of  Map_Entry
+([elfattah-quran_ProjectKB_Instance_1845] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([elfattah-quran_ProjectKB_Instance_1822] of  Map_Entry
+([elfattah-quran_ProjectKB_Instance_1846] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
@@ -818,9 +848,9 @@
 ([KB_263471_Instance_0] of  Map
 
 	(entries
-		[elfattah-quran_ProjectKB_Instance_1820]
-		[elfattah-quran_ProjectKB_Instance_1821]
-		[elfattah-quran_ProjectKB_Instance_1822]))
+		[elfattah-quran_ProjectKB_Instance_1844]
+		[elfattah-quran_ProjectKB_Instance_1845]
+		[elfattah-quran_ProjectKB_Instance_1846]))
 
 ([KB_263471_Instance_10] of  Widget
 
@@ -4166,7 +4196,9 @@
 		[KB_938545_Instance_325]
 		[KB_938545_Instance_327]
 		[KB_221055_Instance_26]
-		[KB_221055_Instance_30]))
+		[KB_221055_Instance_30]
+		[elfattah-quran_ProjectKB_Instance_1827]
+		[elfattah-quran_ProjectKB_Instance_1829]))
 
 ([KB_938545_Instance_250] of  Widget
 
@@ -4981,7 +5013,9 @@
 		[KB_938545_Instance_132]
 		[KB_938545_Instance_134]
 		[KB_221055_Instance_10]
-		[KB_221055_Instance_14]))
+		[KB_221055_Instance_14]
+		[elfattah-quran_ProjectKB_Instance_1823]
+		[elfattah-quran_ProjectKB_Instance_1825]))
 
 ([KB_938545_Instance_57] of  Widget
 
