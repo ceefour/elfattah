@@ -1,4 +1,4 @@
-; Thu Jul 31 02:48:30 WIT 2008
+; Thu Jul 31 03:03:47 WIT 2008
 ; 
 ;+ (version "3.4")
 ;+ (build "Build 130")
@@ -6,11 +6,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[quran-001_ProjectKB_Instance_12]
-		[quran-001_ProjectKB_Instance_13]
-		[quran-001_ProjectKB_Instance_14]
-		[quran-001_ProjectKB_Instance_15]
-		[quran-001_ProjectKB_Instance_16]))
+		[quran-001_ProjectKB_Instance_4]
+		[quran-001_ProjectKB_Instance_5]
+		[quran-001_ProjectKB_Instance_6]
+		[quran-001_ProjectKB_Instance_7]
+		[quran-001_ProjectKB_Instance_8]))
 
 ([CLSES_TAB] of  Widget
 
@@ -699,6 +699,9 @@
 ([KB_140180_Instance_9] of  Property_List
 )
 
+([KB_161398_Instance_3] of  Map
+)
+
 ([KB_221055_Instance_10] of  Widget
 
 	(height 0)
@@ -972,9 +975,6 @@
 	(property_list [XY_Instance_890])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
-([KB_602237_Instance_3] of  Map
-)
-
 ([KB_632156_Instance_0] of  String
 
 	(name "OWL-PREDEFINED-PROFILE-URI")
@@ -1160,9 +1160,9 @@
 ([KB_688283_Instance_0] of  Map
 
 	(entries
-		[quran-001_ProjectKB_Instance_17]
-		[quran-001_ProjectKB_Instance_18]
-		[quran-001_ProjectKB_Instance_19]))
+		[quran-001_ProjectKB_Instance_9]
+		[quran-001_ProjectKB_Instance_10]
+		[quran-001_ProjectKB_Instance_11]))
 
 ([KB_688283_Instance_116] of  String
 
@@ -5568,12 +5568,12 @@
 	(customized_instance_widgets
 		[PAL_FORM_WIDGET]
 		[KB_713803_Instance_477]
-		[KB_713803_Instance_780]
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[KB_713803_Instance_693]
+		[KB_713803_Instance_780]
 		[KB_301165_Instance_856]
-		[KB_713803_Instance_648]
+		[KB_713803_Instance_693]
 		[KB_691299_Instance_537]
+		[KB_713803_Instance_648]
 		[KB_691299_Instance_398]
 		[KB_303942_Instance_68]
 		[KB_938545_Instance_166]
@@ -5657,17 +5657,17 @@
 		":SYSTEM-CLASS"
 		"owl:oneOf"
 		"owl:DataRange"
-		"rdf:Property"
 		"owl:DeprecatedProperty"
-		"owl:Class"
+		"rdf:Property"
 		"owl:DeprecatedClass"
+		"owl:Class"
 		"rdf:Statement"
 		"rdf:type"
-		"rdf:subject"
 		"rdfs:Class"
+		"rdf:subject"
 		"rdf:predicate"
-		"rdf:object"
 		":OWL-ANONYMOUS-ROOT"
+		"rdf:object"
 		"rdfs:Container"
 		"rdf:Alt"
 		"rdf:Bag"
@@ -5733,48 +5733,48 @@
 		[elfattah-quran-001-alfatiha_ProjectKB_Instance_31]
 		[elfattah-quran-001-alfatiha_ProjectKB_Instance_15]))
 
-([quran-001_ProjectKB_Instance_12] of  String
-
-	(name "owl:Thing")
-	(string_value "%3ANAME"))
-
-([quran-001_ProjectKB_Instance_13] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([quran-001_ProjectKB_Instance_14] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([quran-001_ProjectKB_Instance_15] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([quran-001_ProjectKB_Instance_16] of  String
-
-	(name "owl:Class")
-	(string_value "%3ANAME"))
-
-([quran-001_ProjectKB_Instance_17] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([quran-001_ProjectKB_Instance_18] of  Map_Entry
+([quran-001_ProjectKB_Instance_10] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([quran-001_ProjectKB_Instance_19] of  Map_Entry
+([quran-001_ProjectKB_Instance_11] of  Map_Entry
 
 	(key "suppress_instance_counting")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
+
+([quran-001_ProjectKB_Instance_4] of  String
+
+	(name "owl:Thing")
+	(string_value "%3ANAME"))
+
+([quran-001_ProjectKB_Instance_5] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([quran-001_ProjectKB_Instance_6] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([quran-001_ProjectKB_Instance_7] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([quran-001_ProjectKB_Instance_8] of  String
+
+	(name "owl:Class")
+	(string_value "%3ANAME"))
+
+([quran-001_ProjectKB_Instance_9] of  Map_Entry
+
+	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))

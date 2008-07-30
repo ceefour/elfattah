@@ -1,4 +1,4 @@
-; Thu Jul 31 02:28:46 WIT 2008
+; Thu Jul 31 03:15:08 WIT 2008
 ; 
 ;+ (version "3.4")
 ;+ (build "Build 130")
@@ -6,11 +6,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[quran-1.0_ProjectKB_Instance_10004]
-		[quran-1.0_ProjectKB_Instance_10005]
-		[quran-1.0_ProjectKB_Instance_10006]
-		[quran-1.0_ProjectKB_Instance_10007]
-		[quran-1.0_ProjectKB_Instance_10008]))
+		[quran-1.0_ProjectKB_Instance_4]
+		[quran-1.0_ProjectKB_Instance_5]
+		[quran-1.0_ProjectKB_Instance_6]
+		[quran-1.0_ProjectKB_Instance_7]
+		[quran-1.0_ProjectKB_Instance_8]))
 
 ([CLSES_TAB] of  Widget
 
@@ -45,24 +45,6 @@
 )
 
 ([elfattah-quran_ProjectKB_Instance_173] of  Property_List
-)
-
-([elfattah-quran_ProjectKB_Instance_1823] of  Widget
-
-	(is_hidden FALSE)
-	(name "protege:readOnly")
-	(property_list [elfattah-quran_ProjectKB_Instance_1824]))
-
-([elfattah-quran_ProjectKB_Instance_1824] of  Property_List
-)
-
-([elfattah-quran_ProjectKB_Instance_1825] of  Widget
-
-	(is_hidden FALSE)
-	(name "protege:allowedParent")
-	(property_list [elfattah-quran_ProjectKB_Instance_1826]))
-
-([elfattah-quran_ProjectKB_Instance_1826] of  Property_List
 )
 
 ([elfattah-quran_ProjectKB_Instance_225] of  Widget
@@ -694,9 +676,9 @@
 ([KB_263471_Instance_0] of  Map
 
 	(entries
-		[quran-1.0_ProjectKB_Instance_10009]
-		[quran-1.0_ProjectKB_Instance_10010]
-		[quran-1.0_ProjectKB_Instance_10011]))
+		[quran-1.0_ProjectKB_Instance_9]
+		[quran-1.0_ProjectKB_Instance_10]
+		[quran-1.0_ProjectKB_Instance_11]))
 
 ([KB_263471_Instance_10] of  Widget
 
@@ -977,6 +959,9 @@
 	(property_list [XY_Instance_665])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
+([KB_399429_Instance_3] of  Map
+)
+
 ([KB_444675_Instance_0] of  String
 
 	(name "SwitchableClassDefinitionType")
@@ -988,9 +973,6 @@
 	(name "protege:ExternalResource")
 	(property_list [XY_Instance_890])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([KB_505188_Instance_3] of  Map
-)
 
 ([KB_632156_Instance_0] of  String
 
@@ -4857,9 +4839,7 @@
 		[KB_938545_Instance_132]
 		[KB_938545_Instance_134]
 		[KB_221055_Instance_10]
-		[KB_221055_Instance_14]
-		[elfattah-quran_ProjectKB_Instance_1823]
-		[elfattah-quran_ProjectKB_Instance_1825]))
+		[KB_221055_Instance_14]))
 
 ([KB_938545_Instance_57] of  Widget
 
@@ -5720,159 +5700,51 @@
 		[KB_263471_Instance_32]
 		[KB_263471_Instance_16]))
 
-([quran-1.0_ProjectKB_Instance_10] of  Widget
-
-	(is_hidden FALSE)
-	(name "protege:defaultLanguage")
-	(property_list [quran-1.0_ProjectKB_Instance_11]))
-
-([quran-1.0_ProjectKB_Instance_10004] of  String
-
-	(name "owl:Thing")
-	(string_value "%3ANAME"))
-
-([quran-1.0_ProjectKB_Instance_10005] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([quran-1.0_ProjectKB_Instance_10006] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([quran-1.0_ProjectKB_Instance_10007] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([quran-1.0_ProjectKB_Instance_10008] of  String
-
-	(name "owl:Class")
-	(string_value "%3ANAME"))
-
-([quran-1.0_ProjectKB_Instance_10009] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([quran-1.0_ProjectKB_Instance_10010] of  Map_Entry
+([quran-1.0_ProjectKB_Instance_10] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([quran-1.0_ProjectKB_Instance_10011] of  Map_Entry
+([quran-1.0_ProjectKB_Instance_11] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([quran-1.0_ProjectKB_Instance_10012] of  Widget
+([quran-1.0_ProjectKB_Instance_4] of  String
 
-	(is_hidden FALSE)
-	(name "protege:todoProperty")
-	(property_list [quran-1.0_ProjectKB_Instance_10013]))
+	(name "owl:Thing")
+	(string_value "%3ANAME"))
 
-([quran-1.0_ProjectKB_Instance_10013] of  Property_List
-)
+([quran-1.0_ProjectKB_Instance_5] of  String
 
-([quran-1.0_ProjectKB_Instance_10014] of  Widget
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
 
-	(is_hidden FALSE)
-	(name "protege:probeClass")
-	(property_list [quran-1.0_ProjectKB_Instance_10015]))
+([quran-1.0_ProjectKB_Instance_6] of  String
 
-([quran-1.0_ProjectKB_Instance_10015] of  Property_List
-)
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
 
-([quran-1.0_ProjectKB_Instance_10016] of  Widget
+([quran-1.0_ProjectKB_Instance_7] of  String
 
-	(is_hidden FALSE)
-	(name "protege:subclassesDisjoint")
-	(property_list [quran-1.0_ProjectKB_Instance_10017]))
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
 
-([quran-1.0_ProjectKB_Instance_10017] of  Property_List
-)
+([quran-1.0_ProjectKB_Instance_8] of  String
 
-([quran-1.0_ProjectKB_Instance_10018] of  Widget
+	(name "owl:Class")
+	(string_value "%3ANAME"))
 
-	(is_hidden FALSE)
-	(name "protege:abstract")
-	(property_list [quran-1.0_ProjectKB_Instance_10019]))
+([quran-1.0_ProjectKB_Instance_9] of  Map_Entry
 
-([quran-1.0_ProjectKB_Instance_10019] of  Property_List
-)
-
-([quran-1.0_ProjectKB_Instance_10020] of  Widget
-
-	(is_hidden FALSE)
-	(name "protege:allowedParent")
-	(property_list [quran-1.0_ProjectKB_Instance_10021]))
-
-([quran-1.0_ProjectKB_Instance_10021] of  Property_List
-)
-
-([quran-1.0_ProjectKB_Instance_10022] of  Widget
-
-	(is_hidden FALSE)
-	(name "protege:readOnly")
-	(property_list [quran-1.0_ProjectKB_Instance_10023]))
-
-([quran-1.0_ProjectKB_Instance_10023] of  Property_List
-)
-
-([quran-1.0_ProjectKB_Instance_10024] of  Widget
-
-	(is_hidden FALSE)
-	(name "protege:allowedParent")
-	(property_list [quran-1.0_ProjectKB_Instance_10025]))
-
-([quran-1.0_ProjectKB_Instance_10025] of  Property_List
-)
-
-([quran-1.0_ProjectKB_Instance_10026] of  Widget
-
-	(is_hidden FALSE)
-	(name "protege:readOnly")
-	(property_list [quran-1.0_ProjectKB_Instance_10027]))
-
-([quran-1.0_ProjectKB_Instance_10027] of  Property_List
-)
-
-([quran-1.0_ProjectKB_Instance_11] of  Property_List
-)
-
-([quran-1.0_ProjectKB_Instance_4] of  Widget
-
-	(is_hidden FALSE)
-	(name "protege:usedLanguage")
-	(property_list [quran-1.0_ProjectKB_Instance_5]))
-
-([quran-1.0_ProjectKB_Instance_5] of  Property_List
-)
-
-([quran-1.0_ProjectKB_Instance_6] of  Widget
-
-	(is_hidden FALSE)
-	(name "protege:todoPrefix")
-	(property_list [quran-1.0_ProjectKB_Instance_7]))
-
-([quran-1.0_ProjectKB_Instance_7] of  Property_List
-)
-
-([quran-1.0_ProjectKB_Instance_8] of  Widget
-
-	(is_hidden FALSE)
-	(name "protege:excludedTest")
-	(property_list [quran-1.0_ProjectKB_Instance_9]))
-
-([quran-1.0_ProjectKB_Instance_9] of  Property_List
-)
+	(key "add_name_on_instance_form")
+	(key_class "java.lang.String")
+	(value "false")
+	(value_class "java.lang.String"))
 
 ([SLOTS_TAB] of  Widget
 
