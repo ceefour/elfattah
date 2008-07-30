@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:quran="http://elfattah.org/ontologies/quran-1.0.owl#"
+    xmlns="http://elfattah.org/data/quran-001-alfatiha.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://elfattah.org/data/quran-001-alfatiha.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://elfattah.org/ontologies/quran-1.0.owl"/>
+  </owl:Ontology>
+  <quran:Sura rdf:ID="AlFatiha">
+    <rdfs:label xml:lang="ar">‏الفاتحة‎</rdfs:label>
+  </quran:Sura>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 130)  http://protege.stanford.edu -->
