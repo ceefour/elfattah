@@ -16,8 +16,8 @@ public final class QueryShell extends ShellBase
 
 	@Override
 	@MessageDriven(uri="seda:shellIn")
-	public void process(String command) {
-		reply("Thank you for saying '"+ command + "'");
+	public void process(String message) {
+		reply("Thank you for saying '"+ message + "'");
 		reply("Seriously, this is good...!");
 	}
 	

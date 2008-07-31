@@ -18,6 +18,19 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<name>${bundle.symbolicName}</name>
 	<packaging>bundle</packaging>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<configuration>
+					<instructions>
+						<Export-Package>!${bundle.namespace}.internal.*,${bundle.namespace}.*;version="${pom.version}", org.jivesoftware.smack.*;org.jivesoftware.smackx.*;version="3.0.4"</Export-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 	<dependencies>
 		<dependency>
 			<groupId>org.elfattah</groupId>
@@ -25,10 +38,25 @@
 			<version>1.0.0-SNAPSHOT</version>
 			<type>bundle</type>
 		</dependency>
+		<!--
+			<dependency> <groupId>org.apache.camel</groupId>
+			<artifactId>camel-stream</artifactId>
+			<version>${camel-version}</version> </dependency>
+		-->
 		<dependency>
 			<groupId>org.apache.camel</groupId>
-			<artifactId>camel-stream</artifactId>
+			<artifactId>camel-xmpp</artifactId>
 			<version>${camel-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.igniterealtime.smack</groupId>
+			<artifactId>smack</artifactId>
+			<version>3.0.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.igniterealtime.smack</groupId>
+			<artifactId>smackx</artifactId>
+			<version>3.0.4</version>
 		</dependency>
 	</dependencies>
 </project>

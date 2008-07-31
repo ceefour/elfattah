@@ -7,6 +7,8 @@ import org.apache.camel.Endpoint;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.ProducerTemplate;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.elfattah.Shell;
 import org.elfattah.StringProcessor;
 
@@ -22,6 +24,8 @@ public abstract class ShellBase implements Shell, Processor {
 	private StringProcessor responseProcessor;
 	
 	private ProducerTemplate<Exchange> producer;
+
+	private final Log log = LogFactory.getLog(getClass());
 	
 	@Override
 	public ProducerTemplate<Exchange> getProducer() {
@@ -46,10 +50,17 @@ public abstract class ShellBase implements Shell, Processor {
 	 * Notifies the listener with output text.
 	 */
 	protected void reply(String text) {
-		if (responseProcessor != null)
+		boolean replied = false;
+		if (responseProcessor != null) {
 			responseProcessor.process(text);
-		if (producer != null)
+			replied = true;
+		}
+		if (producer != null) {
 			producer.sendBody(text);
+			replied = true;
+		}
+		if (!replied)
+			log.warn("reply() does not have any ResponseProcessor or ProducerTemplate. Reponse: '"+ text +"'");
 	}
 
 	@Override
