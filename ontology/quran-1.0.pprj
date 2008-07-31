@@ -1,4 +1,4 @@
-; Thu Jul 31 03:15:08 WIT 2008
+; Thu Jul 31 04:26:21 WIT 2008
 ; 
 ;+ (version "3.4")
 ;+ (build "Build 130")
@@ -959,9 +959,6 @@
 	(property_list [XY_Instance_665])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
-([KB_399429_Instance_3] of  Map
-)
-
 ([KB_444675_Instance_0] of  String
 
 	(name "SwitchableClassDefinitionType")
@@ -973,6 +970,9 @@
 	(name "protege:ExternalResource")
 	(property_list [XY_Instance_890])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
+
+([KB_585890_Instance_3] of  Map
+)
 
 ([KB_632156_Instance_0] of  String
 
@@ -3234,7 +3234,7 @@
 
 ([KB_865583_Instance_12] of  Widget
 
-	(is_hidden TRUE)
+	(is_hidden FALSE)
 	(property_list [KB_865583_Instance_13])
 	(widget_class_name "uk.ac.man.ac.mig.coode.individuals.ui.OWLDLIndividualsTab"))
 
@@ -3252,7 +3252,7 @@
 
 ([KB_865583_Instance_6] of  Widget
 
-	(is_hidden TRUE)
+	(is_hidden FALSE)
 	(property_list [KB_865583_Instance_7])
 	(widget_class_name "uk.ac.man.cs.mig.coode.debugger.test.DebuggerTestTab"))
 
@@ -5664,7 +5664,6 @@
 		[Instance_2600]
 		[Instance_3234]
 		[KB_865583_Instance_8]
-		[KB_263471_Instance_46]
 		[KB_263471_Instance_18]
 		[KB_263471_Instance_22]
 		[KB_263471_Instance_38]
@@ -5681,6 +5680,7 @@
 		[KB_263471_Instance_2]
 		[Instance_45]
 		[KB_263471_Instance_42]
+		[KB_263471_Instance_46]
 		[KB_865583_Instance_12]
 		[KB_263471_Instance_14]
 		[KB_263471_Instance_50]
