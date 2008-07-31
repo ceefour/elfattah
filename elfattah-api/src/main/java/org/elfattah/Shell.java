@@ -1,28 +1,15 @@
 package org.elfattah;
 
-import java.util.List;
+
+
 
 /**
  * Public API of a Shell service.
+ * 
+ * Shell can send arbitrary amount of text message
+ * with or without user interaction.
  */
-public interface Shell
+public interface Shell extends Responder, StringResponder, StringProcessor, Startable
 {
-	/**
-	 * Receives input from the user.
-	 * @param command
-	 */
-    void receiveInput(String command);
     
-    /**
-     * Returns listeners.
-     * @return
-     */
-    List<ShellListener> getListeners();
-    
-    /**
-     * Sets listeners.
-     * @param listeners
-     */
-    void setListeners(List<ShellListener> listeners);
 }
-

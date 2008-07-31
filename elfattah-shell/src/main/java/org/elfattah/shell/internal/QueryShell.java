@@ -1,17 +1,30 @@
 package org.elfattah.shell.internal;
 
-import org.elfattah.Shell;
+import org.apache.camel.EndpointInject;
+import org.apache.camel.Exchange;
+import org.apache.camel.MessageDriven;
+import org.apache.camel.ProducerTemplate;
 import org.elfattah.impl.ShellBase;
+import org.springframework.stereotype.Service;
 
 /**
  * Shell used to query the El-Fattah knowledge base.
  */
+@Service("queryShell")
 public final class QueryShell extends ShellBase
-    implements Shell
 {
 
-	public void receiveInput(String command) {
-		notifyOutputText("Thank you for saying '"+ command + "'");
+	@Override
+	@MessageDriven(uri="seda:shellIn")
+	public void process(String command) {
+		reply("Thank you for saying '"+ command + "'");
+		reply("Seriously, this is good...!");
+	}
+	
+	@Override
+	@EndpointInject(uri="seda:shellOut")
+	public void setProducer(ProducerTemplate<Exchange> responseEndpoint) {
+		super.setProducer(responseEndpoint);
 	}
 }
 

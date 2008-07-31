@@ -25,5 +25,10 @@
 			<version>1.0.0-SNAPSHOT</version>
 			<type>bundle</type>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-stream</artifactId>
+			<version>${camel-version}</version>
+		</dependency>
 	</dependencies>
 </project>

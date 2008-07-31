@@ -3,43 +3,73 @@
  */
 package org.elfattah.impl;
 
-import java.util.List;
-
+import org.apache.camel.Endpoint;
+import org.apache.camel.Exchange;
+import org.apache.camel.Processor;
+import org.apache.camel.ProducerTemplate;
 import org.elfattah.Shell;
-import org.elfattah.ShellListener;
+import org.elfattah.StringProcessor;
 
 /**
  * Base class for {@link Shell} implementors.
  * 
+ * Can also be used directly as a Camel {@link Processor}, in which case
+ * setListener should not be called.
+ * 
  * @author ceefour
  */
-public abstract class ShellBase implements Shell {
-
-	private List<ShellListener> listeners;
-
-	/**
-	 * @return the listeners
-	 */
+public abstract class ShellBase implements Shell, Processor {
+	private StringProcessor responseProcessor;
+	
+	private ProducerTemplate<Exchange> producer;
+	
 	@Override
-	public List<ShellListener> getListeners() {
-		return listeners;
-	}
-
-	/**
-	 * @param listeners the listeners to set
-	 */
-	@Override
-	public void setListeners(List<ShellListener> listeners) {
-		this.listeners = listeners;
+	public ProducerTemplate<Exchange> getProducer() {
+		return producer;
 	}
 	
+	@Override
+	public StringProcessor getResponseProcessor() {
+		return responseProcessor;
+	}
+
 	/**
-	 * Notifies all listeners with output text.
+	 * If Message comes from a Camel {@link Exchange}, listener
+	 * will be overridden.
 	 */
-	protected void notifyOutputText(String text) {
-		for (ShellListener listener : listeners) {
-			listener.outputText(text);
-		}
+	@Override
+	public void process(final Exchange exchange) throws Exception {
+		process(exchange.getIn().getBody(String.class));
+	}
+
+	/**
+	 * Notifies the listener with output text.
+	 */
+	protected void reply(String text) {
+		if (responseProcessor != null)
+			responseProcessor.process(text);
+		if (producer != null)
+			producer.sendBody(text);
+	}
+
+	@Override
+	public void setProducer(ProducerTemplate<Exchange> responseEndpoint) {
+		this.producer = responseEndpoint;
+	}
+
+	@Override
+	public void setResponseProcessor(StringProcessor replyProcessor) {
+		this.responseProcessor = replyProcessor;
+	}
+
+	@Override
+	public void start() {
+		// dummy
+	}
+	
+	@Override
+	public void stop() {
+		// dummy
 	}
 
 }
