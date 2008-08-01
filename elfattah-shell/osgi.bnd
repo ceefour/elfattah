@@ -3,7 +3,7 @@
 #-----------------------------------------------------------------
 
 #Bundle-Activator: ${bundle.namespace}.internal.ExampleActivator
-DynamicImport-Package: org.apache.camel.*
+#DynamicImport-Package: org.apache.camel.*
 Embed-Dependency: smack, smackx
 #Export-Package: org.jivesoftware.smack.*, org.jivesoftware.smackx.*,
 #	org.elfattah.shell, !org.elfattah.shell.internal
