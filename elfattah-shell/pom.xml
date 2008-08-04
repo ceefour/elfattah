@@ -7,7 +7,7 @@
 		<bundle.namespace>org.elfattah.shell</bundle.namespace>
 	</properties>
 	<parent>
-		<relativePath>../elfattah-parent-osgi/</relativePath>
+		<relativePath>../elfattah-parent-osgi/pom.xml</relativePath>
 		<groupId>org.elfattah</groupId>
 		<artifactId>elfattah-parent-osgi</artifactId>
 		<version>1.0.0-SNAPSHOT</version>

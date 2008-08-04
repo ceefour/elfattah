@@ -11,7 +11,7 @@
 		<bundle.namespace>org.elfattah.parent</bundle.namespace> </properties>
 	-->
 	<parent>
-		<relativePath>../elfattah-parent/</relativePath>
+		<relativePath>../elfattah-parent/pom.xml</relativePath>
 		<groupId>org.elfattah</groupId>
 		<artifactId>elfattah-parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
