@@ -1,0 +1,119 @@
+h1. El-Fattah
+
+Peer-to-peer sense sharing.
+
+h2. Mantra
+
+Menuntun "Bismillah" di setiap saat. ~Dedi
+
+Inspired by Al Fatehah ayat 6, in which "the Straight Way" owl:isDefinedBy ayat 7. ~Hendy
+
+اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيْمَ
+
+(1:6) Direct us on to the Straight Way *8,
+
+*8. We beseech God to guide us in all walks of life to a way which is absolutely true, which provides us with a properly-based outlook and sound principles of behaviour, a way which will prevent our succumbing to false doctrines and adopting unsound principles of conduct, a way that will lead us to our true salvation and happiness. This is man's prayer to God as he begins the study of the Qur'an. It is, in short, to illuminate the truth which he often tends to lose in a labyrinth of philosophical speculation; to enlighten him as to which of the numerous ethical doctrines ensures a sound course of conduct; to show which of the myriad ways and by-ways is the clear, straight, open road of sound belief and right behaviour.
+
+صِرَاطَ الَّذِيْنَ أَنعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوْبِ عَلَيْهِمْ وَلاَ الضَّالِّيْنَ
+
+(1:7) The way of those whom You have favoured *9, who did not incur Your wrath, who are not astray *10.
+
+*9. This defines the 'straight way' which we ask God to open to us. It is the way which has always been followed by those who have enjoyed God's favours and blessings. This is the way which has been trodden from the beginning of time by all those individuals and communities that have unfailingly enjoyed God's favours and blessings.
+
+*10. This makes it clear that the recipients of God's favour are not those who appear, briefly, to enjoy worldly prosperity and success; all too often, these people are among those whom God has condemned because they have lost sight of the true path of salvation and happiness. This negative explanation makes it quite clear that in'am (favour) denotes all those real and abiding favours and blessings which one receives in reward for righteous conduct through God's approval and pleasure, rather than those apparent and fleeting favours which the Pharaohs, Nimrods and Korahs (Qaruns) used to receive in the past, and which are enjoyed even today by people notorious for oppression, evil and corruption.
+
+Al-Fatehah Tafsir in English: http://muhammad.net/j/index.php?option=com_content&task=view&id=159&Itemid=61
+
+h2. Future Vision (as put by Dedi)
+
+Based on idea & brainwave input, semantically lookup items from database to provide recommendations from Quran.
+
+h2. Overall Technical Details
+
+1. Network will be P2P based. Although in early phases we'll have hardcoded peers:
+    (1) The BookKeeper. A data storage peer that accepts SPARQL queries over XMPP and return RDF datasets. The BookKeeper needs RDF/OWL datasets as input to function.
+    (2) The Receptionist. A human friendly XMPP bot that converts human queries to SPARQL, forwards that to the Storage bot and returns as human friendly results
+    (3) The WebGateway. the web application helper bot, it is used by the webapp to provide the content of web application
+2. XMPP is used as communication protocol
+3. P2P over XMPP should be added later on
+4. Web application have two functionally separate UIs:
+    (1) provides login to ElFattah.org XMPP network using SparkWeb, and then it can query the Receptionist directly.
+    (2) using traditional web UI approach, connected by The WebGateway to query the peer network.
+5. Content is provided using ontologies and RDF/OWL datasets.
+6. Content can be authored by anyone, offline, using RDF/OWL editors such as Protege OWL.
+7. Someone needs to host The BookKeeper and provide it with the data, and connect The BookKeeper to ElFattah.org XMPP Network.
+8. Over time, "truer" P2P topology will be improved and anyone can be a BookKeeper.
+
+h2. Initial Mini-goals
+
+1. Allow Quran database to be added/updated by user ==> use the Quran OWL ontology to make RDF/OWL datasets
+2. Browsed item can be (1) embedded, (2) copy-paste-e; to a [html-capable] blog post (...later on, specific integration for Friendster, Facebook, Blogspot, etc.) ==> need XMPP connector, then web UI for that XMPP
+3. Items are fulltext searchable ==> this is not SPARQL standard, may need other choices like Lucene or Ferret
+
+h2. Idealized Concepts
+
+1. Peer-to-peer. From (1) content, (2) distribution mechanism, (3) development, (4) collaboration, (5) decision making, (6) "tagging" i.e. adding metadata.
+2. Policies and conventions, over rules.
+3. Distributed and decentralized.
+4. Cloud trust system over aristocentric.
+5. Managed and structured (i.e. DHT).
+6. Scalable using P2P-style: more nodes = strengthen.
+7. Open and transparent in every way.
+
+h2. Architectural Alternatives and Decisions
+
+1. Ruby on Rails, Seaside, Java+Wicket : ?
+2. Architecture: peer-to-peer network, web site is just a client
+3. Should use RDF/OWL/SPARQL technologies
+4. Separate "daemon" with "UI"
+5. UI can simply be Openfire XMPP server, connected via Pidgin or Google Talk
+
+h2. Implementation Alternatives and Decisions
+
+1. Web framework: Ruby on Rails, Seaside, Java+Wicket : ?
+2. Role of Flash, ActionScript, AMF ..
+3. XMPP ?
+4. JXTA ?
+5. Mulgara, RDF, SPARQL
+6. Virtuoso OpenLink ! ?
+7. Daemon runs as.. background rb ? connecting to Google Talk over XMPP. Clients and direct clients can query from Pidgin or web-based XMPP UI.
+
+h2. Content Sources
+
+Content should be easily editable by each peer user using only peer software.
+
+Holy Quran Unicode & transliterations: http://www.sacred-texts.com/isl/uq/
+
+h2. License
+
+Unless otherwise mentioned, original components of El-Fattah are licensed under Apache License 2.0. Note that El-Fattah may and will include components from other projects which have their own respective licenses.
+
+h2. Additional Resources (by Febru)
+
+bisa di tambahkan resources dari web sites berikut ini :
+
+1. http://al-islam.com
+2. http://harf.com/
+3. http://saaid.net/
+
+related to web sites di atas, ada bbrp hal yang bisa di ambil:
+
+A) pada case orang mau cari ilmu ttg penjelasan ayat :
+
+1. ada penjelasan cara baca (ada 21 macam bacaan / cara baca ayat
+tersebut) yg resoucenya bs di cari dan atau di buat sendiri oleh ahli
+baca)
+2. ada penjelasan arti / makna quran menurut sarah nya (misal dari
+tafsir jalalain atau tafsir ibn abbas atao yg lain), it should be
+provided by jhon ato Omar, atau yg lain jg bs)
+3. ada penjelasan menurut hadith (jd hampir di setiap hadith besar ada
+bab tafsir quran) mungkin bs di provide oleh org yg punya expertise di
+hadith
+
+B) pada case orang mau consultasi masalah mereka pada web ini, yg jg
+bisa di jawab dgn bantuan para ahli baik quran atau hadith nya
+
+klo ingin audio penjelasanya di share / public bisa di upload ke
+odeo.com
+
+~Febru
